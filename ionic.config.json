@@ -1,0 +1,7 @@
+{
+  "name": "gsense",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
