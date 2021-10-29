@@ -57,5 +57,7 @@ import { provideStorage, getStorage } from '@angular/fire/storage'
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
     ScreenTrackingService, UserTrackingService, GooglePlus],
   bootstrap: [AppComponent],
+  
 })
+
 export class AppModule { }

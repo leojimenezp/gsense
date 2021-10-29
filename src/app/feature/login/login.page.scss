@@ -198,29 +198,64 @@ ion-content {
 
   @media screen and (min-width: 820px) {
     .input {
-      width: 45%;
+        width: 80%;
+        background: transparent !important;
+        padding: 12px 0px;
+        background: #FFFFFF;
+        border: 1px solid rgba(206, 206, 206, 0.5);
+        box-sizing: border-box;
+        border-radius: 10px;
+        color: #000;
+        margin-top: 20px;
+        padding-left: 12px;
+        font-size: 14px;
+        color: #757575;
     }
 
     .btn__google {
       width: 35%;
     }
 
-    .btn__micro {
-      width: 35%;
+    ::placeholder {
+        padding-left: 8px;
+        color: #757575;
+    }
+
+    .buttons {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
     }
 
     .buttons .btn {
-      width: 25%;
+        text-transform: uppercase;
+        margin-top: 30px;
+        width: 80%;
+        padding: 18px 20px;
+        border-radius: 50px;
+        background: #E73122;
+        font-weight: bold;
+        letter-spacing: 1px;
     }
 
     .register {
-      margin-top: 35px;
+        margin-top: 30px;
+        color: #757575;
+        background: #fbfbfb;
+        font-weight: normal;
+        width: 80%;
+        font-size: 14px;
+
     }
   }
 
-  @media screen and (min-width: 1280px) {
-    .input {
-      width: 45%;
+    .click {
+        color: #E73122;
+        font-weight: bold;
+        font-size: 14px;
+
     }
 
     .btn__google {
@@ -240,46 +275,3 @@ ion-content {
     }
   }
 
-  // #header {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
-
-  //     h1 {
-  //         font-weight: 700;
-  //         font-size: 20px;
-  //         color: #E73122;
-  //         margin-bottom: 15%;
-  //     }
-
-  //     img {
-  //         width: 150px;
-  //         border: 8px solid #ffffff;
-  //     }
-  // }
-
-  // #form {
-  //     margin-top: 15px;
-  //     padding-left: 30px;
-  //     padding-right: 30px;
-
-  //     ion-button {
-  //         margin-top: 35px;
-  //         height: 48px;
-  //         font-size: 18px;
-  //         text-transform: initial;
-  //         border-radius: 50px;
-  //         box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
-  //     }
-
-  // }
-
-  // #logo {
-  //     position: absolute;
-  //     width: 152px;
-  //     height: 34px;
-  //     left: 112px;
-  //     top: 76px;
-  //     mix-blend-mode: multiply;
-  // }
-}

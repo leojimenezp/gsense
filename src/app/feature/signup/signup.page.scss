@@ -1,8 +1,8 @@
 * {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: Roboto;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
 }
 
 ion-toolbar {
@@ -11,160 +11,171 @@ ion-toolbar {
 }
 
 ion-content {
-  --background: #fbfbfb;
+    --background: #fbfbfb;
 
-  .logo {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
+    .logo {
+        margin-top: 60px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
 
-  .image {
-    width: 152px;
-    height: 34px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    mix-blend-mode: multiply;
-  }
+    .image {
+        width: 152px;
+        height: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        mix-blend-mode: multiply;
+    }
 
-  h3 {
-    color: #e73122;
-    width: 95%;
-    margin: auto;
-    margin-top: 50px;
-    font-weight: bold;
-    font-size: 20px;
-  }
+    h3 {
+        color: #E73122;
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 20px;
 
-  .text_registro {
-    width: 95%;
-    margin: auto;
-    display: block;
-    font-family: Roboto;
-    letter-spacing: 0.02em;
-    color: #757575;
-    margin-top: 15px;
-    font-size: 15px;
-  }
+    }
 
-  #form {
-    width: 100%;
-    margin-top: 30px;
-  }
+    .text_registro {
+        width: 90%;
+        margin: auto;
+        display: block;
+        letter-spacing: 0.02em;
+        color: #757575;
+        margin-top: 15px;
+        font-size: 15px;
+    }
 
-  .main__input {
-    flex-direction: column;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-  }
+    #form {
+        width: 100%;
+        margin-top: 30px;
+    }
 
-  .text_input {
-    display: flex;
-    width: 95%;
-    color: #757575;
-    margin-left: 5px;
-    margin-bottom: 8px;
-    font-size: 14px;
-    font-weight: bold;
-  }
+    .main__input {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
 
-  .input {
-    width: 95%;
-    background: transparent !important;
-    padding: 12px 0px;
-    background: #ffffff;
-    border: 1px solid rgba(206, 206, 206, 0.5);
-    box-sizing: border-box;
-    border-radius: 10px;
-    color: #000;
-  }
+    }
 
-  .input:hover {
-    border: 1px solid rgba(231, 49, 34, 0.5);
-  }
+    .text_input {
+        display: flex;
+        width: 90%;
+        color: #757575;
+        margin-left: 5px;
+        margin-bottom: 8px;
+        font-size: 14px;
+        font-weight: bold;
 
-  .buttons {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
+    }
 
-  .buttons .btn {
-    text-transform: uppercase;
-    margin-top: 20px;
-    width: 90%;
-    padding: 18px 20px;
-    background: #e73122;
-    border-radius: 50px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    color: white;
-  }
+    .input {
+        width: 90%;
+        background: transparent !important;
+        padding: 12px 0px;
+        background: #FFFFFF;
+        border: 1px solid rgba(206, 206, 206, 0.5);
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding-left: 15px;
+        font-size: 14px;
+        color: #757575;
 
-  .register {
-    margin-top: 20px;
-    color: #757575;
-    background: #fbfbfb;
-    font-weight: bold;
-    width: 80%;
-    font-size: 16px;
-  }
+    }
 
-  .click {
-    color: #e73122;
-    font-weight: bold;
-  }
+    .input:hover {
+        border: 1px solid rgba(231, 49, 34, 0.5);
 
-  // #header {
-  //     display: flex;
-  //     flex-direction: column;
-  //     align-items: center;
+    }
 
-  //     h1 {
-  //         font-weight: 700;
-  //         font-size: 20px;
-  //         color: #E73122;
-  //         margin-bottom: 15%;
-  //     }
 
-  //     img {
-  //         width: 150px;
-  //         border: 8px solid #ffffff;
-  //     }
+    .buttons {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
 
-  //     #textRegistro {
-  //         color: #757575;
-  //     }
-  // }
+    .buttons .btn {
+        text-transform: uppercase;
+        margin-top: 20px;
+        width: 90%;
+        padding: 18px 20px;
+        background: #E73122;
+        border-radius: 50px;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
 
-  // #form {
-  //     margin-top: 15px;
-  //     padding-left: 30px;
-  //     padding-right: 30px;
 
-  //     ion-button {
-  //         margin-top: 35px;
-  //         height: 48px;
-  //         font-size: 18px;
-  //         text-transform: initial;
-  //         border-radius: 50px;
-  //         box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
-  //     }
+    .register {
+        margin-top: 20px;
+        color: #757575;
+        background: #fbfbfb;
+        font-weight: normal;
+        width: 80%;
+        font-size: 14px;
+    }
 
-  //     #textLabel {
-  //         color: #757575;
-  //     }
+    .click {
+        color: #E73122;
+        font-weight: bold;
+        font-size: 14px;
 
-  //     #textClic {
-  //         color: #E73122;
-  //     }
+    }
 
-  // }
+    // #header {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+
+    //     h1 {
+    //         font-weight: 700;
+    //         font-size: 20px;
+    //         color: #E73122;
+    //         margin-bottom: 15%;
+    //     }
+
+    //     img {
+    //         width: 150px;
+    //         border: 8px solid #ffffff;
+    //     }
+
+    //     #textRegistro {
+    //         color: #757575;
+    //     }
+    // }
+
+
+    // #form {
+    //     margin-top: 15px;
+    //     padding-left: 30px;
+    //     padding-right: 30px;
+
+    //     ion-button {
+    //         margin-top: 35px;
+    //         height: 48px;
+    //         font-size: 18px;
+    //         text-transform: initial;
+    //         border-radius: 50px;
+    //         box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
+    //     }
+
+    //     #textLabel {
+    //         color: #757575;
+    //     }
+
+    //     #textClic {
+    //         color: #E73122;
+    //     }
+
+
+    // }
 }
