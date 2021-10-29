@@ -206,8 +206,16 @@ ion-content {
 
 }
 
-ion-tab-bar {
-    .nav__text {
-        color: #ffffff;
+ion-tabs {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
+
+    ion-tab-bar {
+        --background: #E73122;
+
+        .nav__text {
+            color: #ffffff;
+        }
     }
 }
