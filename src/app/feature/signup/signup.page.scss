@@ -2,7 +2,6 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Roboto;
 
 }
 
@@ -33,7 +32,7 @@ ion-content {
 
     h3 {
         color: #E73122;
-        width: 95%;
+        width: 90%;
         margin: auto;
         margin-top: 50px;
         font-weight: bold;
@@ -42,10 +41,9 @@ ion-content {
     }
 
     .text_registro {
-        width: 95%;
+        width: 90%;
         margin: auto;
         display: block;
-        font-family: Roboto;
         letter-spacing: 0.02em;
         color: #757575;
         margin-top: 15px;
@@ -69,7 +67,7 @@ ion-content {
 
     .text_input {
         display: flex;
-        width: 95%;
+        width: 90%;
         color: #757575;
         margin-left: 5px;
         margin-bottom: 8px;
@@ -79,20 +77,24 @@ ion-content {
     }
 
     .input {
-        width: 95%;
+        width: 90%;
         background: transparent !important;
         padding: 12px 0px;
         background: #FFFFFF;
         border: 1px solid rgba(206, 206, 206, 0.5);
         box-sizing: border-box;
         border-radius: 10px;
-        color: #000;
+        padding-left: 15px;
+        font-size: 14px;
+        color: #757575;
+
     }
 
     .input:hover {
         border: 1px solid rgba(231, 49, 34, 0.5);
 
     }
+
 
     .buttons {
         display: flex;
@@ -118,14 +120,16 @@ ion-content {
         margin-top: 20px;
         color: #757575;
         background: #fbfbfb;
-        font-weight: bold;
+        font-weight: normal;
         width: 80%;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .click {
         color: #E73122;
         font-weight: bold;
+        font-size: 14px;
+
     }
 
     // #header {

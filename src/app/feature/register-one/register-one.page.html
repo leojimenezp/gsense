@@ -1,9 +1,118 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>register_one</ion-title>
+    <ion-title><i class="fas fa-bars bars"></i></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="container">
+    <h3>Registro</h3>
+    <p>Te haremos unas breves preguntas para que tú experiencia sea la más adecuada.</p>
+  </div>
 
+  <div class="progress">
+    <div class="num active">
+      <span>1</span>
+    </div>
+    <span class="line"></span>
+    <div class="num">
+      <span>2</span>
+    </div>
+    <span class="line"></span>
+    <div class="num">
+      <span>3</span>
+    </div>
+  </div>
+  <form id="main_form">
+    <div class="main__input">
+      <label for="nombre__registro" class="text_input">Nombre y Apellido</label>
+      <input class="input" id="nombre__registro" type="text" required />
+    </div>
+    <div class="main__input">
+      <label for="correo__registro" class="text_input">Correo Electrónico</label>
+      <input class="input" id="correo__registro" type="email" required />
+    </div>
+    <div class="main__input">
+      <label for="tel__registro" class="text_input">Télefono</label>
+      <input class="input" id="tel__registro" type="tel" required />
+    </div>
+    <div class="main__input">
+      <label for="rut__registro" class="text_input">RUT</label>
+      <input class="input" id="rut__registro" type="number" required />
+    </div>
+    <div class="main__input">
+      <label for="date" class="text_input">Fecha de Nacimiento</label>
+    </div>
+    <div class="fecha">
+      <div class="field-inline-block">
+        <label>Día</label>
+        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+      </div>
+
+      <div class="field-inline-block">
+        <label>Mes</label>
+        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+      </div>
+
+      <div class="field-inline-block">
+        <label>Año</label>
+        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
+      </div>
+    </div>
+    <div class="datos">
+      <div class="field-inline-block">
+        <label class="label">Peso</label>
+        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+      </div>
+
+      <div class="field-inline-block">
+        <label class="label">Altura</label>
+        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+      </div>
+
+      <div class="field-inline-block">
+        <label class="label">Cintura</label>
+        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
+      </div>
+    </div>
+    <div class="main__input">
+      <label for="hemo" class="text_input">Hemoglobina Glicosilada</label>
+      <input class="input" id="hemo" type="text" required />
+    </div>
+  </form>
+
+  <div class="buttons">
+    <button class="btn" routerLink="/register-two">Guardar y seguir</button>
+  </div>
+  <ion-tabs>
+    <ion-tab-bar>
+      <ion-tab-button>
+        <div id="logo">
+          <img id="img" src="assets/1.png" />
+        </div>
+        <ion-label class="nav__text">Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <div id="logo">
+          <img id="img" src="assets/2.png" />
+        </div>
+        <ion-label class="nav__text">Services</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <div id="logo">
+          <img id="img" src="assets/3.png" />
+        </div>
+        <ion-label class="nav__text">Appointment</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button>
+        <div id="logo">
+          <img id="img" src="assets/bars.png" />
+        </div>
+        <ion-label class="nav__text">Metrics</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>

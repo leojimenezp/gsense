@@ -119,6 +119,9 @@ ion-content {
         border-radius: 10px;
         color: #000;
         margin-top: 20px;
+        padding-left: 12px;
+        font-size: 14px;
+        color: #757575;
     }
 
     .input:hover {
@@ -126,17 +129,22 @@ ion-content {
 
     }
 
+    ::placeholder {
+        padding-left: 8px;
+        color: #757575;
+    }
+
     .buttons {
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .buttons .btn {
         text-transform: uppercase;
-        margin-top: 20px;
+        margin-top: 30px;
         width: 80%;
         padding: 18px 20px;
         border-radius: 50px;
@@ -147,16 +155,20 @@ ion-content {
 
 
     .register {
-        margin-top: 20px;
-        color: #000;
+        margin-top: 30px;
+        color: #757575;
         background: #fbfbfb;
-        font-weight: bold;
+        font-weight: normal;
         width: 80%;
+        font-size: 14px;
+
     }
 
     .click {
         color: #E73122;
         font-weight: bold;
+        font-size: 14px;
+
     }
 
     @media screen and (min-width: 505px) {
