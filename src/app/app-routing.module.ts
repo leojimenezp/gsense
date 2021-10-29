@@ -19,6 +19,18 @@ const routes: Routes = [
     path: 'splash',
     loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
   },
+  {
+    path: 'register-one',
+    loadChildren: () => import('./register-one/register-one.module').then( m => m.RegisterOnePageModule)
+  },
+  {
+    path: 'register-two',
+    loadChildren: () => import('./register-two/register-two.module').then( m => m.RegisterTwoPageModule)
+  },
+  {
+    path: 'register-three',
+    loadChildren: () => import('./register-three/register-three.module').then( m => m.RegisterThreePageModule)
+  },
 ];
 
 @NgModule({
