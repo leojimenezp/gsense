@@ -18,22 +18,25 @@
   <h3>Crea tu cuenta</h3>
   <ion-label class="text_registro">Ingresa tus datos para que puedas disfrutar de todos los beneficios que traemos para
     ti. </ion-label>
-  <form id="form">
+  <form id="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
     <div class="main__input">
-      <label for="nombre" class="text_input">Nombre y Apellido</label>
-      <input class="input" id="nombre" type="text" required />
+      <label class="text_input">Nombre y Apellido</label>
+      <input class="input" type="text" name="fullname" [(ngModel)]="user.fullname" #fullname="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && fullname.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
-      <label for="nombre" class="text_input">Correo Electrónico</label>
-      <input class="input" id="nombre" type="email" required />
+      <label class="text_input">Correo Electrónico</label>
+      <input class="input" type="email" name="email" [(ngModel)]="user.email" #email="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
-      <label for="nombre" class="text_input">Télefono</label>
-      <input class="input" id="nombre" type="tel" required />
+      <label class="text_input">Télefono</label>
+      <input class="input" type="text" name="phone" [(ngModel)]="user.phone" #phone="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required autocomplete="off" />
+    </div>
+    <div class="buttons">
+      <button class="btn" type="submit">Registrarme</button>
+      <button class="register">¿Ya tienes una cuenta?<span class="click"> Click Aquí</span></button>
     </div>
   </form>
-  <div class="buttons">
-    <button class="btn">Registrarme</button>
-    <button class="register">¿Ya tienes una cuenta?<span class="click"> Click Aquí</span></button>
-  </div>
 </ion-content>

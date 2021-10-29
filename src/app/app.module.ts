@@ -1,11 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import { LoaderInterceptor } from '@core/interceptor/loader.interceptor';
 import { TokenInterceptor } from '@core/interceptor/token-interceptor';
 
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { GooglePlus } from '@ionic-native/google-plus/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -14,7 +17,7 @@ import { provideAuth, getAuth } from '@angular/fire/auth';
 import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
 
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { environment } from '../environments/environment';
+import { firebaseConfig } from '../environments/environment';
 import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from '@angular/fire/analytics';
 import { provideDatabase, getDatabase } from '@angular/fire/database';
@@ -30,7 +33,10 @@ import { provideStorage, getStorage } from '@angular/fire/storage'
   imports: [BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(firebaseConfig)),
     provideAuth(() => getAuth()), provideFirestore(() => getFirestore()),
     provideAnalytics(() => getAnalytics()),
     provideDatabase(() => getDatabase()),
@@ -49,7 +55,7 @@ import { provideStorage, getStorage } from '@angular/fire/storage'
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
-    ScreenTrackingService, UserTrackingService],
+    ScreenTrackingService, UserTrackingService, GooglePlus],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
