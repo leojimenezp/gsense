@@ -12,21 +12,28 @@
 </ion-header>
 
 <ion-content>
-  <div id="header">
-    <img src="assets/logonutrix.jpeg" />
-    <h1>Crear tu cuenta</h1>
-    <ion-label   id="textRegistro">Ingresa tus datos para que puedas disfrutar de todos los beneficios que traemos para ti. </ion-label>
+  <div class="logo">
+    <img class="image" src="assets/logonutrix.jpeg" />
   </div>
-
+  <h3>Crea tu cuenta</h3>
+  <ion-label class="text_registro">Ingresa tus datos para que puedas disfrutar de todos los beneficios que traemos para
+    ti. </ion-label>
   <form id="form">
-    <app-input placeholder="Email"></app-input>
-    <app-input type="password" placeholder="Password"></app-input>
-    <ion-button expand="block" shape="round">REGISTRARME</ion-button>
-    <ion-label  id="textLabel">
-        ¿Ya tienes una cuenta? 
-    </ion-label>
-     <ion-label color="primary" id="textClic">
-        Click Aquí
-    </ion-label>
+    <div class="main__input">
+      <label for="nombre" class="text_input">Nombre y Apellido</label>
+      <input class="input" id="nombre" type="text" required />
+    </div>
+    <div class="main__input">
+      <label for="nombre" class="text_input">Correo Electrónico</label>
+      <input class="input" id="nombre" type="email" required />
+    </div>
+    <div class="main__input">
+      <label for="nombre" class="text_input">Télefono</label>
+      <input class="input" id="nombre" type="tel" required />
+    </div>
   </form>
+  <div class="buttons">
+    <button class="btn">Registrarme</button>
+    <button class="register">¿Ya tienes una cuenta?<span class="click"> Click Aquí</span></button>
+  </div>
 </ion-content>
