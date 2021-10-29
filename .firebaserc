@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "login-ng-7997d": {
+      "hosting": {
+        "app": [
+          "login-ng-7997d"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "login-ng-7997d"
+  }
+}
