@@ -12,14 +12,23 @@
 </ion-header>
 
 <ion-content>
-  <div id="header">
-    <h1>Login</h1>
-    <img src="assets/logonutrix.jpeg" />
+
+  <div id="logo">
+    <img id="img" src="assets/logonutrix.jpeg" />
   </div>
- 
-  <form id="form">
-    <app-input placeholder="Email"></app-input>
-    <app-input type="password" placeholder="Password"></app-input>
-     <ion-button expand="block" shape="round">Login</ion-button>
+  <span id="text">Sing in</span>
+  <div class="btn__login">
+    <button class="btn__google"><i class="fab fa-google-plus-g x1"></i> Continue with Google</button>
+    <button class="btn__micro"><i class="fab fa-windows x2"> </i> Continue with Microsoft</button>
+  </div>
+  <span class="or">Or</span>
+  <form id="main__form">
+    <app-input shape="round" id="email" type="email " placeholder="Email"></app-input>
+    <app-input shape="round" id="pass" type="password" placeholder="Password"></app-input>
+
   </form>
+  <div class="buttons">
+    <button class="btn">Login</button>
+    <button class="register">You have not registered?? <span class="click">Click Here</span></button>
+  </div>
 </ion-content>
