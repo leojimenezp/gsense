@@ -1,3 +1,4 @@
+import { User } from './../shared/user.interface';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,7 @@ import { Injectable } from '@angular/core';
 })
 export class AuthService {
 
-  constructor() { }
+  constructor( ) { }
+
+
 }
