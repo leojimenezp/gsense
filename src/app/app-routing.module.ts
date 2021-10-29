@@ -4,32 +4,32 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('@feature/home/home.module').then(m => m.HomePageModule)
   },
- 
+
   {
     path: 'login',
-    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+    loadChildren: () => import('@feature/login/login.module').then(m => m.LoginPageModule)
   },
   {
     path: 'signup',
-    loadChildren: () => import('./signup/signup.module').then( m => m.SignupPageModule)
+    loadChildren: () => import('@feature/signup/signup.module').then(m => m.SignupPageModule)
   },
   {
     path: 'splash',
-    loadChildren: () => import('./splash/splash.module').then( m => m.SplashPageModule)
+    loadChildren: () => import('@feature/splash/splash.module').then(m => m.SplashPageModule)
   },
   {
     path: 'register-one',
-    loadChildren: () => import('./register-one/register-one.module').then( m => m.RegisterOnePageModule)
+    loadChildren: () => import('@feature/register-one/register-one.module').then(m => m.RegisterOnePageModule)
   },
   {
     path: 'register-two',
-    loadChildren: () => import('./register-two/register-two.module').then( m => m.RegisterTwoPageModule)
+    loadChildren: () => import('@feature/register-two/register-two.module').then(m => m.RegisterTwoPageModule)
   },
   {
     path: 'register-three',
-    loadChildren: () => import('./register-three/register-three.module').then( m => m.RegisterThreePageModule)
+    loadChildren: () => import('@feature/register-three/register-three.module').then(m => m.RegisterThreePageModule)
   },
 ];
 
