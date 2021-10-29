@@ -13,7 +13,7 @@ export const environment = {
     measurementId: 'G-LP25E5ZS8Q',
   },
   production: false,
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
   firebaseConfig: {
     apiKey: "AIzaSyDHYL_dR6CBgKEA2SSGILMoT88tZKElebg",
     authDomain: "login-ng-7997d.firebaseapp.com",
