@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserModel } from '@shared/interfaces/user.interface';
+import { UserService } from '@shared/services/user.service';
 
 @Component({
   selector: 'app-signup',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignupPage implements OnInit {
 
-  constructor() { }
+  public user: UserModel = {};
+
+  constructor(
+    private userService: UserService
+  ) { }
 
   ngOnInit() {
+  }
+
+  public onSubmit() {
+    this.userService.createAcount(this.user).subscribe(response => {
+      console.log(response);
+    });
   }
 
 }

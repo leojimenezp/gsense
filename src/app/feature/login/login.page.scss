@@ -1,114 +1,202 @@
 * {
-    margin: 0px;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 ion-toolbar {
-    --background: #fbfbfb;
-    text-transform: initial;
-
+  --background: #fbfbfb;
+  text-transform: initial;
 }
 
 ion-content {
-    --background: #fbfbfb;
+  --background: #fbfbfb;
 
+  #logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    #logo {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  #img {
+    width: 152px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+  }
 
-    #img {
-        width: 152px;
-        height: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        mix-blend-mode: multiply;
-    }
+  #text {
+    margin-top: 40px;
+    display: inline-block;
+    color: #a3a1a1;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
 
-    #text {
-        margin-top: 40px;
-        display: inline-block;
-        color: #a3a1a1;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
-    }
+  .btn__login {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    margin-top: 20px;
+  }
 
-    .btn__login {
-        display: flex;
-        justify-content: space-around;
-        flex-flow: column wrap;
-        margin-top: 20px;
+  .btn__google {
+    text-transform: capitalize;
+    width: 80%;
+
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #cb2d3e;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .btn__micro {
+    text-transform: capitalize;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    width: 80%;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background: #e44d26;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f16529, #e44d26);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f16529, #e44d26);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
+  .x1,
+  .x2 {
+    color: rgb(255, 255, 255);
+  }
+
+  .or {
+    margin-top: 40px;
+    display: inline-block;
+    color: #a3a1a1;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #main__form {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .input {
+    width: 80%;
+    background: transparent !important;
+    padding: 12px 0px;
+    background: #ffffff;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #000;
+    margin-top: 20px;
+  }
+
+  .input:hover {
+    border: 1px solid rgba(231, 49, 34, 0.5);
+  }
+
+  .buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .buttons .btn {
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 80%;
+    padding: 18px 20px;
+    border-radius: 50px;
+    background: #e73122;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .register {
+    margin-top: 20px;
+    color: #000;
+    background: #fbfbfb;
+    font-weight: bold;
+    width: 80%;
+  }
+
+  .click {
+    color: #e73122;
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 505px) {
+    .input {
+      width: 45%;
     }
 
     .btn__google {
-        text-transform: capitalize;
-        width: 80%;
-
-        margin: auto;
-        margin-top: 20px;
-        width: 80%;
-        padding: 12px 20px;
-        border-radius: 12px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background: #cb2d3e;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #ef473a, #cb2d3e);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
+      width: 55%;
     }
 
     .btn__micro {
-        text-transform: capitalize;
-        width: 80%;
-        margin: auto;
-        margin-top: 20px;
-        width: 80%;
-        padding: 12px 20px;
-        border-radius: 12px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background: #E44D26;
-        /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #F16529, #E44D26);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #F16529, #E44D26);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+      width: 55%;
     }
 
-    .x1,
-    .x2 {
-        color: rgb(255, 255, 255);
+    .buttons .btn {
+      width: 55%;
     }
 
-    .or {
-        margin-top: 40px;
-        display: inline-block;
-        color: #a3a1a1;
-        width: 100%;
-        text-align: center;
-        font-weight: bold;
+    .register {
+      margin-top: 15px;
+    }
+  }
+
+  @media screen and (min-width: 660px) {
+    .input {
+      width: 45%;
     }
 
-    #main__form {
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        margin-top: 20px;
+    .btn__google {
+      width: 45%;
     }
 
+    .btn__micro {
+      width: 45%;
+    }
+
+    .buttons .btn {
+      width: 45%;
+    }
+
+    .register {
+      margin-top: 25px;
+    }
+  }
+
+  @media screen and (min-width: 820px) {
     .input {
         width: 80%;
         background: transparent !important;
@@ -124,9 +212,8 @@ ion-content {
         color: #757575;
     }
 
-    .input:hover {
-        border: 1px solid rgba(231, 49, 34, 0.5);
-
+    .btn__google {
+      width: 35%;
     }
 
     ::placeholder {
@@ -153,7 +240,6 @@ ion-content {
         letter-spacing: 1px;
     }
 
-
     .register {
         margin-top: 30px;
         color: #757575;
@@ -163,6 +249,7 @@ ion-content {
         font-size: 14px;
 
     }
+  }
 
     .click {
         color: #E73122;
@@ -171,146 +258,20 @@ ion-content {
 
     }
 
-    @media screen and (min-width: 505px) {
-
-        .input {
-            width: 45%;
-
-        }
-
-        .btn__google {
-            width: 55%;
-        }
-
-        .btn__micro {
-            width: 55%;
-        }
-
-        .buttons .btn {
-            width: 55%;
-
-        }
-
-        .register {
-            margin-top: 15px;
-        }
+    .btn__google {
+      width: 25%;
     }
 
-    @media screen and (min-width: 660px) {
-
-        .input {
-            width: 45%;
-
-        }
-
-        .btn__google {
-            width: 45%;
-        }
-
-        .btn__micro {
-            width: 45%;
-        }
-
-        .buttons .btn {
-            width: 45%;
-
-        }
-
-        .register {
-            margin-top: 25px;
-        }
+    .btn__micro {
+      width: 25%;
     }
 
-    @media screen and (min-width: 820px) {
-        .input {
-            width: 45%;
-
-        }
-
-        .btn__google {
-            width: 35%;
-        }
-
-        .btn__micro {
-            width: 35%;
-        }
-
-        .buttons .btn {
-            width: 25%;
-        }
-
-        .register {
-            margin-top: 35px;
-        }
+    .buttons .btn {
+      width: 10%;
     }
 
-    @media screen and (min-width: 1280px) {
-        .input {
-            width: 45%;
-
-        }
-
-        .btn__google {
-            width: 25%;
-        }
-
-        .btn__micro {
-            width: 25%;
-        }
-
-        .buttons .btn {
-            width: 10%;
-        }
-
-        .register {
-            margin-top: 50px;
-        }
+    .register {
+      margin-top: 50px;
     }
+  }
 
-    // #header {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-
-    //     h1 {
-    //         font-weight: 700;
-    //         font-size: 20px;
-    //         color: #E73122;
-    //         margin-bottom: 15%;
-    //     }
-
-    //     img {
-    //         width: 150px;
-    //         border: 8px solid #ffffff;
-    //     }
-    // }
-
-
-    // #form {
-    //     margin-top: 15px;
-    //     padding-left: 30px;
-    //     padding-right: 30px;
-
-
-    //     ion-button {
-    //         margin-top: 35px;
-    //         height: 48px;
-    //         font-size: 18px;
-    //         text-transform: initial;
-    //         border-radius: 50px;
-    //         box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
-    //     }
-
-
-    // }
-
-
-    // #logo {
-    //     position: absolute;
-    //     width: 152px;
-    //     height: 34px;
-    //     left: 112px;
-    //     top: 76px;
-    //     mix-blend-mode: multiply;
-    // }
-}
