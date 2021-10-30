@@ -9,6 +9,7 @@ ion-toolbar {
   --background: #E73122;
   text-transform: initial;
   color: rgb(255, 255, 255);
+  height: 100%;
 
   .bars {
     display: flex;
@@ -20,6 +21,7 @@ ion-toolbar {
 
 ion-content {
   --background: #fbfbfb;
+  height: 100%;
 
   .main {
     display: flex;
@@ -75,6 +77,10 @@ ion-content {
     margin-top: 4px;
   }
 
+  .space {
+    margin-bottom: 140px;
+  }
+
   .connect__green .settings {
     position: absolute;
     right: 20px;
@@ -120,9 +126,8 @@ ion-content {
   }
 
   .edit {
-    position: absolute;
-    right: 20px;
-    top: 360px;
+    margin-top: 10px;
+
     color: #E73122;
     text-decoration: underline;
     font-size: 13px;
@@ -157,9 +162,10 @@ ion-content {
   }
 
   .main__text {
-    position: absolute;
-    background: #000;
+    position: relative;
     width: 100%;
+    height: 10%;
+    color: red;
   }
 
   .text1 {
@@ -202,29 +208,45 @@ ion-content {
   }
 
   .edit2 {
-    position: absolute;
-    right: 20px;
-    bottom: 200px;
+    margin-top: 10px;
     color: #E73122;
     text-decoration: underline;
     font-size: 13px;
   }
 
+  .info {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+
+  }
+
   ion-tabs {
+
 
     ion-tab-bar {
       --background: #E73122;
       width: 100%;
-      // position: absolute;
-      // top: 695px;
-      // left: 0;
-      // margin: 20px 0px;
+      position: absolute;
+      top: 892px;
+      left: 0;
+
 
       .nav__text {
         color: #ffffff;
       }
 
+    }
+  }
 
+
+  @media screen and (min-width: 361px) {
+    ion-tab-bar {
+      width: 100%;
+      position: absolute;
+      background: #000;
+      top: 905px;
+      left: 0;
 
     }
   }
