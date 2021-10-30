@@ -35,8 +35,8 @@
         [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required autocomplete="off" />
     </div>
     <div class="buttons">
-      <button class="btn" type="submit">Registrarme</button>
-      <button class="register">¿Ya tienes una cuenta?<span class="click"> Click Aquí</span></button>
+      <button class="btn" type="submit"  routerLink="/register-one">Registrarme</button>
+      <button class="register" routerLink="/login">¿Ya tienes una cuenta?<span class="click"> Click Aquí</span></button>
     </div>
   </form>
 </ion-content>
