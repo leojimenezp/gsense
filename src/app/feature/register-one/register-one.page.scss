@@ -190,6 +190,8 @@ ion-content {
         justify-content: center;
         align-items: center;
         margin-top: 20px;
+        margin-bottom: 90px;
+
     }
 
 
@@ -204,18 +206,22 @@ ion-content {
         letter-spacing: 1px;
     }
 
-}
+    ion-tabs {
 
-ion-tabs {
-    position: absolute !important;
-    bottom: 0 !important;
-    width: 100% !important;
+        ion-tab-bar {
+            --background: #E73122;
+            width: 100%;
+            position: absolute;
+            top: 1035px;
+            left: 0;
+            margin: 20px 0px;
 
-    ion-tab-bar {
-        --background: #E73122;
+            .nav__text {
+                color: #ffffff;
+            }
 
-        .nav__text {
-            color: #ffffff;
+
+
         }
     }
 }
