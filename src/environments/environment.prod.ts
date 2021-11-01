@@ -1,3 +1,7 @@
+export const environment = {
+  production: true,
+};
+
 export const firebaseConfig = {
   apiKey: "AIzaSyBsrlmW-2jgSrLSRhoWyctjAI6poLBLffM",
   authDomain: "gsense.firebaseapp.com",

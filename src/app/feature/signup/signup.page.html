@@ -21,18 +21,18 @@
   <form id="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
     <div class="main__input">
       <label class="text_input">Nombre y Apellido</label>
-      <input class="input" type="text" name="fullname" [(ngModel)]="user.fullname" #fullname="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && fullname.invalid }" required autocomplete="off" />
+      <input class="input" type="text" name="nombre" [(ngModel)]="user.nombre" #nombre="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label class="text_input">Correo Electrónico</label>
-      <input class="input" type="email" name="email" [(ngModel)]="user.email" #email="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && email.invalid }" required autocomplete="off" />
+      <input class="input" type="email" name="correo" [(ngModel)]="user.correo" #correo="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && correo.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label class="text_input">Télefono</label>
-      <input class="input" type="text" name="phone" [(ngModel)]="user.phone" #phone="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && phone.invalid }" required autocomplete="off" />
+      <input class="input" type="text" name="telefono" [(ngModel)]="user.telefono" #telefono="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && telefono.invalid }" required autocomplete="off" />
     </div>
     <div class="buttons">
       <button class="btn" type="submit">Registrarme</button>
