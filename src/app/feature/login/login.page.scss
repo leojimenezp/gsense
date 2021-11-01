@@ -114,13 +114,22 @@ ion-content {
     border-radius: 10px;
     color: #000;
     margin-top: 20px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #757575;
   }
 
   .input:hover {
     border: 1px solid rgba(231, 49, 34, 0.5);
   }
 
-  .buttons {
+  ::placeholder {
+    padding-left: 8px;
+    font-size: 14px;
+    color: #757575;
+  }
+
+  #buttons {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -128,13 +137,13 @@ ion-content {
     margin-top: 20px;
   }
 
-  .buttons .btn {
+  #buttons #btn {
     text-transform: uppercase;
     margin-top: 20px;
-    width: 80%;
+    width: 90%;
     padding: 18px 20px;
+    background: #E73122;
     border-radius: 50px;
-    background: #e73122;
     font-weight: bold;
     letter-spacing: 1px;
   }
@@ -198,18 +207,18 @@ ion-content {
 
   @media screen and (min-width: 820px) {
     .input {
-        width: 80%;
-        background: transparent !important;
-        padding: 12px 0px;
-        background: #FFFFFF;
-        border: 1px solid rgba(206, 206, 206, 0.5);
-        box-sizing: border-box;
-        border-radius: 10px;
-        color: #000;
-        margin-top: 20px;
-        padding-left: 12px;
-        font-size: 14px;
-        color: #757575;
+      width: 80%;
+      background: transparent !important;
+      padding: 12px 0px;
+      background: #FFFFFF;
+      border: 1px solid rgba(206, 206, 206, 0.5);
+      box-sizing: border-box;
+      border-radius: 10px;
+      color: #000;
+      margin-top: 20px;
+      padding-left: 12px;
+      font-size: 14px;
+      color: #757575;
     }
 
     .btn__google {
@@ -217,61 +226,60 @@ ion-content {
     }
 
     ::placeholder {
-        padding-left: 8px;
-        color: #757575;
+      padding-left: 8px;
+      color: #757575;
     }
 
     .buttons {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0px;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0px;
     }
 
     .buttons .btn {
-        text-transform: uppercase;
-        margin-top: 30px;
-        width: 80%;
-        padding: 18px 20px;
-        border-radius: 50px;
-        background: #E73122;
-        font-weight: bold;
-        letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-top: 30px;
+      width: 80%;
+      padding: 18px 20px;
+      border-radius: 50px;
+      background: #E73122;
+      font-weight: bold;
+      letter-spacing: 1px;
     }
 
     .register {
-        margin-top: 30px;
-        color: #757575;
-        background: #fbfbfb;
-        font-weight: normal;
-        width: 80%;
-        font-size: 14px;
+      margin-top: 30px;
+      color: #757575;
+      background: #fbfbfb;
+      font-weight: normal;
+      width: 80%;
+      font-size: 14px;
 
     }
   }
 
-    .click {
-        color: #E73122;
-        font-weight: bold;
-        font-size: 14px;
+  .click {
+    color: #E73122;
+    font-weight: bold;
+    font-size: 14px;
 
-    }
-
-    .btn__google {
-      width: 25%;
-    }
-
-    .btn__micro {
-      width: 25%;
-    }
-
-    .buttons .btn {
-      width: 10%;
-    }
-
-    .register {
-      margin-top: 50px;
-    }
   }
 
+  .btn__google {
+    width: 25%;
+  }
+
+  .btn__micro {
+    width: 25%;
+  }
+
+  .buttons .btn {
+    width: 10%;
+  }
+
+  .register {
+    margin-top: 50px;
+  }
+}
