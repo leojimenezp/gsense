@@ -19,6 +19,8 @@ export class SignupPage implements OnInit {
   }
 
   public onSubmit() {
+    this.user.idPerfil = 2;
+
     this.userService.createAcount(this.user).subscribe(response => {
       console.log(response);
     });

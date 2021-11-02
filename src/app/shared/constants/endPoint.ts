@@ -1,6 +1,3 @@
-const API = "localhost:4000/api";
-const AUTH = "auth";
+const API = "https://gsense.greentechapp.com/api";
 const USER = "user";
-
-
-export { API, AUTH, USER, };
+export { API, USER };
