@@ -78,7 +78,7 @@ ion-content {
   }
 
   .space {
-    margin-bottom: 140px;
+    margin-bottom: 10px;
   }
 
   .connect__green .settings {
@@ -221,33 +221,4 @@ ion-content {
 
   }
 
-  ion-tabs {
-
-
-    ion-tab-bar {
-      --background: #E73122;
-      width: 100%;
-      position: absolute;
-      top: 892px;
-      left: 0;
-
-
-      .nav__text {
-        color: #ffffff;
-      }
-
-    }
-  }
-
-
-  @media screen and (min-width: 361px) {
-    ion-tab-bar {
-      width: 100%;
-      position: absolute;
-      background: #000;
-      top: 905px;
-      left: 0;
-
-    }
-  }
 }

@@ -3,6 +3,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
+
 }
 
 ion-toolbar {
@@ -18,6 +19,7 @@ ion-toolbar {
 }
 
 ion-content {
+
     --background: #fbfbfb;
 
     .container {
@@ -204,22 +206,6 @@ ion-content {
         letter-spacing: 1px;
     }
 
-    ion-tabs {
-
-        ion-tab-bar {
-            --background: #E73122;
-            width: 100%;
-            position: absolute;
-            top: 1035px;
-            left: 0;
-            margin: 20px 0px;
-
-            .nav__text {
-                color: #ffffff;
-            }
 
 
-
-        }
-    }
 }

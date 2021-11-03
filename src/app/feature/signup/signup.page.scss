@@ -116,12 +116,11 @@ ion-content {
 
 
     .register {
-        margin-top: 20px;
+        margin-top: 40px;
         color: #757575;
         background: #fbfbfb;
-        font-weight: normal;
+        font-weight: 400;
         width: 80%;
-        font-size: 14px;
     }
 
     .click {
@@ -131,51 +130,5 @@ ion-content {
 
     }
 
-    // #header {
-    //     display: flex;
-    //     flex-direction: column;
-    //     align-items: center;
-
-    //     h1 {
-    //         font-weight: 700;
-    //         font-size: 20px;
-    //         color: #E73122;
-    //         margin-bottom: 15%;
-    //     }
-
-    //     img {
-    //         width: 150px;
-    //         border: 8px solid #ffffff;
-    //     }
-
-    //     #textRegistro {
-    //         color: #757575;
-    //     }
-    // }
-
-
-    // #form {
-    //     margin-top: 15px;
-    //     padding-left: 30px;
-    //     padding-right: 30px;
-
-    //     ion-button {
-    //         margin-top: 35px;
-    //         height: 48px;
-    //         font-size: 18px;
-    //         text-transform: initial;
-    //         border-radius: 50px;
-    //         box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.05);
-    //     }
-
-    //     #textLabel {
-    //         color: #757575;
-    //     }
-
-    //     #textClic {
-    //         color: #E73122;
-    //     }
-
-
-    // }
+    
 }

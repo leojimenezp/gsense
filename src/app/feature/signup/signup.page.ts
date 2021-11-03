@@ -16,11 +16,13 @@ export class SignupPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log("leoooo");
+
   }
 
   public onSubmit() {
     this.user.idPerfil = 2;
-
+    console.log("leo");
     this.userService.createAcount(this.user).subscribe(response => {
       console.log(response);
     });
