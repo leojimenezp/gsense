@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { UserModel } from '@shared/interfaces/user.interface';
-import { UserService } from '@shared/services/user.service';
-
+import { localStorageService } from '@shared/services/localstorage.service';
+import { USER_DATA } from '@shared/constants/storage';
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.page.html',
@@ -12,19 +13,17 @@ export class SignupPage implements OnInit {
   public user: UserModel = {};
 
   constructor(
-    private userService: UserService
+    private storageService: localStorageService,
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
   public onSubmit() {
-    alert('Hello word')
     this.user.idPerfil = 2;
-
-    this.userService.createAcount(this.user).subscribe(response => {
-      console.log(response);
-    });
+    this.storageService.createStorage(USER_DATA, this.user);
+    this.router.navigate(['/register-one']);
   }
 
 }
