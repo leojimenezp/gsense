@@ -14,5 +14,4 @@ export class UserService {
     public createAcount(data: UserModel): Observable<UserModel> {
         return this.http.post<UserModel>(`${API}/${USER}`, data);
     }
-
 }

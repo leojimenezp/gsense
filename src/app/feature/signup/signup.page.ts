@@ -19,6 +19,7 @@ export class SignupPage implements OnInit {
   }
 
   public onSubmit() {
+    alert('Hello word')
     this.user.idPerfil = 2;
 
     this.userService.createAcount(this.user).subscribe(response => {
