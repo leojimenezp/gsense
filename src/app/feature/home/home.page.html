@@ -5,56 +5,33 @@
 </ion-header>
 
 <ion-content>
-  <div class="main">
-    <div class="text">
-      <p>Good Morning, Marcos!</p>
+  <ion-infinite-scroll>
+    <div class="main">
+      <div class="text">
+        <p>Good Morning, Marcos!</p>
+      </div>
+      <div class="image">
+        <img src="assets/hombre.png" />
+      </div>
     </div>
-    <div class="image">
-      <img src="assets/hombre.png" />
+    <h3>gSense Reading</h3>
+    <div class="connect__green">
+      <span></span>
+      <p>Connected</p>
+      <p class="settings">Settings</p>
     </div>
-  </div>
-  <h3>gSense Reading</h3>
-  <div class="connect__green">
-    <span></span>
-    <p>Connected</p>
-    <p class="settings">Settings</p>
-  </div>
-  <div class="main__bg">
-    <div class="bg__gray">
-      <div class="bg__text">Last reading at 7:05 am</div>
-      <div class="bg__text upper">125 mg/dL</div>
-      <div class="bg__text">October 26, 2021</div>
+    <div class="main__bg">
+      <div class="bg__gray">
+        <div class="bg__text">Last reading at 7:05 am</div>
+        <div class="bg__text upper">125 mg/dL</div>
+        <div class="bg__text">October 26, 2021</div>
+      </div>
     </div>
-  </div>
-  <div class="info">
-    <h3>Things for Morning</h3>
-    <div class="edit">Edit</div>
-  </div>
+    <div class="info">
+      <h3>Things for Morning</h3>
+      <div class="edit">Edit</div>
+    </div>
 
-  <div class="main_circles">
-    <span class="circle active"></span>
-    <span class="line">-</span>
-    <span class="circle"></span>
-    <span class="line">-</span>
-    <span class="circle"></span>
-  </div>
-  <div class="main__text">
-    <div class="text1">
-      <p>Check your blood sugar</p>
-    </div>
-    <div class="text2">
-      <p>Take your medication</p>
-    </div>
-    <div class="text3">
-      <p>Have a god breakfast</p>
-    </div>
-  </div>
-  <div class="info">
-    <h3>For afternoon</h3>
-    <div class="edit2">Edit</div>
-  </div>
-
-  <div class="space">
     <div class="main_circles">
       <span class="circle active"></span>
       <span class="line">-</span>
@@ -67,42 +44,38 @@
         <p>Check your blood sugar</p>
       </div>
       <div class="text2">
-        <p>Take your fruits</p>
+        <p>Take your medication</p>
       </div>
       <div class="text3">
-        <p>Do exercise</p>
+        <p>Have a god breakfast</p>
       </div>
     </div>
-  </div>
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button>
-        <div id="logo">
-          <img id="img" src="assets/2.png" />
-        </div>
-        <ion-label class="nav__text">Home</ion-label>
-      </ion-tab-button>
+    <div class="info">
+      <h3>For afternoon</h3>
+      <div class="edit2">Edit</div>
+    </div>
 
-      <ion-tab-button>
-        <div id="logo">
-          <img id="img" src="assets/1.png" />
+    <div class="space">
+      <div class="main_circles">
+        <span class="circle active"></span>
+        <span class="line">-</span>
+        <span class="circle"></span>
+        <span class="line">-</span>
+        <span class="circle"></span>
+      </div>
+      <div class="main__text">
+        <div class="text1">
+          <p>Check your blood sugar</p>
         </div>
-        <ion-label class="nav__text">Services</ion-label>
-      </ion-tab-button>
+        <div class="text2">
+          <p>Take your fruits</p>
+        </div>
+        <div class="text3">
+          <p>Do exercise</p>
+        </div>
+      </div>
+    </div>
 
-      <ion-tab-button>
-        <div id="logo">
-          <img id="img" src="assets/3.png" />
-        </div>
-        <ion-label class="nav__text">Appointment</ion-label>
-      </ion-tab-button>
+  </ion-infinite-scroll>
 
-      <ion-tab-button>
-        <div id="logo">
-          <img id="img" src="assets/bars.png" />
-        </div>
-        <ion-label class="nav__text">Metrics</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
 </ion-content>

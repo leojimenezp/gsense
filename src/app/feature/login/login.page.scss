@@ -34,7 +34,7 @@ ion-content {
     color: #a3a1a1;
     width: 100%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   .btn__login {
@@ -92,7 +92,7 @@ ion-content {
     color: #a3a1a1;
     width: 100%;
     text-align: center;
-    font-weight: bold;
+    font-weight: 400;
   }
 
   #main__form {
@@ -149,10 +149,10 @@ ion-content {
   }
 
   .register {
-    margin-top: 20px;
-    color: #000;
+    margin-top: 10px;
+    color: #757575;
     background: #fbfbfb;
-    font-weight: bold;
+    font-weight: 400;
     width: 80%;
   }
 
@@ -241,22 +241,21 @@ ion-content {
     .buttons .btn {
       text-transform: uppercase;
       margin-top: 30px;
-      width: 80%;
       padding: 18px 20px;
       border-radius: 50px;
       background: #E73122;
       font-weight: bold;
       letter-spacing: 1px;
+
     }
 
     .register {
       margin-top: 30px;
-      color: #757575;
       background: #fbfbfb;
       font-weight: normal;
-      width: 80%;
-      font-size: 14px;
-
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 5px;
     }
   }
 

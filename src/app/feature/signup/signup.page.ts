@@ -18,6 +18,8 @@ export class SignupPage implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log("leoooo");
+
   }
 
   public onSubmit() {

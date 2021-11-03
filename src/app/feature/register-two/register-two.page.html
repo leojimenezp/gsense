@@ -1,9 +1,97 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>register_two</ion-title>
+    <ion-title><i class="fas fa-bars bars"></i></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="container">
+    <h3>Registro</h3>
+    <p>Te haremos unas breves preguntas para que tú experiencia sea la más adecuada.</p>
+  </div>
 
+  <div class="progress">
+    <div class="num ">
+      <span>1</span>
+    </div>
+    <span class="line"></span>
+    <div class="num active">
+      <span>2</span>
+    </div>
+    <span class="line"></span>
+    <div class="num">
+      <span>3</span>
+    </div>
+  </div>
+
+  <form id="main_form">
+    <div class="main__input">
+      <label for="trabajo" class="text_input">¿En qué trabaja?</label>
+      <input class="input" id="trabajo" type="text" required />
+    </div>
+    <div class="main__input">
+      <label for="turno" class="text_input">Turno de trabajo</label>
+    </div>
+    <div class="main_checkbox" id="turno">
+      <div class="round">
+        <input type="checkbox" id="checkbox1" />
+        <label for="checkbox1">Diurno</label>
+      </div>
+      <div class="round">
+        <input type="checkbox" id="checkbox2" />
+        <label for="checkbox2">Nocturno</label>
+
+      </div>
+      <div class="round">
+        <input type="checkbox" id="checkbox3" />
+        <label for="checkbox3">Día / noche</label>
+      </div>
+    </div>
+    <div class="main__input">
+      <label for="seguro" class="text_input">¿Qué seguro medico tiene?</label>
+    </div>
+    <div id="seguro" class="main_select">
+      <select>
+        <option class="option" value="1">Elija una opción</option>
+        <option class="option" value="2">Sanitas</option>
+        <option class="option" value="3">Sura</option>
+      </select>
+    </div>
+    <div class="main__input">
+      <label for="seguro" class="text_input">¿Fue diagnosticado con?</label>
+    </div>
+    <div id="seguro" class="main_select">
+      <select>
+        <option class="option" value="1">Elija una opción</option>
+        <option class="option" value="2">Cáncer</option>
+        <option class="option" value="3">Enfermedad terminal</option>
+      </select>
+    </div>
+    <div class="main__input">
+      <label for="turno" class="text_input">Usa medicamentos para la diabetes</label>
+    </div>
+    <div class="main_checkbox" id="turno">
+      <div class="round">
+        <input type="checkbox" id="si" />
+        <label for="si">Si</label>
+      </div>
+      <div class="round">
+        <input type="checkbox" id="no" />
+        <label for="no">No</label>
+      </div>
+    </div>
+    <div class="main__input">
+      <label for="turno" class="text_input">Usa insulina para su tratamineto de la diabetes</label>
+    </div>
+    <div class="main_checkbox" id="turno">
+      <div class="round">
+        <input type="checkbox" id="si" />
+        <label for="si">Si</label>
+      </div>
+      <div class="round">
+        <input type="checkbox" id="no" />
+        <label for="no">No</label>
+      </div>
+    </div>
+  </form>
 </ion-content>

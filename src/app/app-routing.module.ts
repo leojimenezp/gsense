@@ -31,6 +31,11 @@ const routes: Routes = [
     path: 'register-three',
     loadChildren: () => import('@feature/register-three/register-three.module').then(m => m.RegisterThreePageModule)
   },
+
+  {
+    path: 'tabs',
+    loadChildren: () => import('./feature/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
 ];
 
 @NgModule({
