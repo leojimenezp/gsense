@@ -23,22 +23,26 @@
       <span>3</span>
     </div>
   </div>
-  <form id="main_form">
+  <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
     <div class="main__input">
       <label for="nombre__registro" class="text_input">Nombre y Apellido</label>
-      <input class="input" id="nombre__registro" type="text" required />
+      <input class="input" type="text" name="nombre" [(ngModel)]="user.nombre" #nombre="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label for="correo__registro" class="text_input">Correo Electrónico</label>
-      <input class="input" id="correo__registro" type="email" required />
+      <input class="input" type="email" name="correo" [(ngModel)]="user.correo" #correo="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && correo.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label for="tel__registro" class="text_input">Télefono</label>
-      <input class="input" id="tel__registro" type="tel" required />
+      <input class="input" type="text" name="telefono" [(ngModel)]="user.telefono" #telefono="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && telefono.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label for="rut__registro" class="text_input">RUT</label>
-      <input class="input" id="rut__registro" type="number" required />
+      <input class="input" type="text" name="rut" [(ngModel)]="user.rut" #rut="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && rut.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label for="date" class="text_input">Fecha de Nacimiento</label>
@@ -46,43 +50,51 @@
     <div class="fecha">
       <div class="field-inline-block">
         <label>Día</label>
-        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" name="dia" [(ngModel)]="user.dia"
+          #dia="ngModel" [ngClass]="{ 'is-invalid': f.submitted && dia.invalid }" required autocomplete="off" />
       </div>
 
       <div class="field-inline-block">
         <label>Mes</label>
-        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" name="mes" [(ngModel)]="user.mes"
+          #mes="ngModel" [ngClass]="{ 'is-invalid': f.submitted && mes.invalid }" required autocomplete="off" />
       </div>
 
       <div class="field-inline-block">
         <label>Año</label>
-        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
+        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" name="ano"
+          [(ngModel)]="user.ano" #ano="ngModel" [ngClass]="{ 'is-invalid': f.submitted && ano.invalid }" required
+          autocomplete="off" />
       </div>
     </div>
     <div class="datos">
       <div class="field-inline-block">
         <label class="label">Peso</label>
-        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+        <input type="text" maxlength="8" size="8" class="date-field" name="peso" [(ngModel)]="user.peso" #peso="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && peso.invalid }" required autocomplete="off" />
       </div>
 
       <div class="field-inline-block">
         <label class="label">Altura</label>
-        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" />
+        <input type="text" maxlength="8" size="8" class="date-field" name="altura" [(ngModel)]="user.altura"
+          #altura="ngModel" [ngClass]="{ 'is-invalid': f.submitted && altura.invalid }" required autocomplete="off" />
       </div>
 
       <div class="field-inline-block">
         <label class="label">Cintura</label>
-        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" />
+        <input type="text" maxlength="10" size="10" class="date-field date-field--year" name="cintura"
+          [(ngModel)]="user.cintura" #cintura="ngModel" [ngClass]="{ 'is-invalid': f.submitted && cintura.invalid }"
+          required autocomplete="off" />
       </div>
     </div>
     <div class="main__input">
       <label for="hemo" class="text_input">Hemoglobina Glicosilada</label>
-      <input class="input" id="hemo" type="text" required />
+      <input class="input" id="hemo" type="text" name="hemogoblina" [(ngModel)]="user.hemogoblina"
+        #hemogoblina="ngModel" [ngClass]="{ 'is-invalid': f.submitted && hemogoblina.invalid }" required
+        autocomplete="off" />
+    </div>
+    <div class="buttons">
+      <button class="btn" type="submit">Guardar y seguir</button>
     </div>
   </form>
-
-  <div class="buttons">
-    <button class="btn" routerLink="/register-two">Guardar y seguir</button>
-  </div>
-
 </ion-content>

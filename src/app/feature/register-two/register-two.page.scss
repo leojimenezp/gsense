@@ -2,238 +2,248 @@
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-
 ion-toolbar {
-    --background: #E73122;
-    text-transform: initial;
-    color: rgb(255, 255, 255);
+  --background: #e73122;
+  text-transform: initial;
+  color: rgb(255, 255, 255);
 
-    .bars {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20px;
-    }
+  .bars {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
 }
 
 ion-content {
-    --background: #fbfbfb;
+  --background: #fbfbfb;
 
-    .container {
-        width: 100%;
-    }
+  .container {
+    width: 100%;
+  }
 
-    .container h3 {
-        color: #E73122;
-        width: 90%;
-        margin: auto;
-        display: block;
-        margin-top: 40px;
-    }
+  .container h3 {
+    color: #e73122;
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+  }
 
-    .container p {
-        color: #757575;
-        width: 90%;
-        margin: auto;
-        display: block;
-        margin-top: 20px;
-        line-height: 20px;
-        margin-bottom: 40px;
-    }
+  .container p {
+    color: #757575;
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
 
-    //Progress number
-    .progress {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: auto;
-    }
+  //Progress number
+  .progress {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
 
-    .num {
-        display: inline-block;
-        width: 54px;
-        height: 54px;
-        border: 1px solid #D4D4D4;
-        box-sizing: border-box;
-        border-radius: 50%;
-    }
+  .num {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
 
-    .num span {
-        display: block;
-        color: #D4D4D4;
-        text-align: center;
-        line-height: 54px;
-        font-size: 25px;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-    }
+  .num span {
+    display: block;
+    color: #d4d4d4;
+    text-align: center;
+    line-height: 54px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
 
-    .active {
-        border-color: #E73122 !important;
-    }
+  .active {
+    border-color: #e73122 !important;
+  }
 
-    // Linea de los paso 1 a 3.
-    .line {
-        display: inline-block;
-        width: 40px;
-        height: 1px;
-        background: #D4D4D4;
-    }
+  // Linea de los paso 1 a 3.
+  .line {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: #d4d4d4;
+  }
 
-    //Formulario de registro
+  //Formulario de registro
 
-    #main_form {
-        width: 100%;
-        margin-top: 35px;
-    }
+  #main_form {
+    width: 100%;
+    margin-top: 35px;
+  }
 
-    .main__input {
-        flex-direction: column;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
+  .main__input {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
 
-    }
+  .text_input {
+    display: flex;
+    width: 90%;
+    color: #757575;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-    .text_input {
-        display: flex;
-        width: 90%;
-        color: #757575;
-        margin-left: 5px;
-        margin-bottom: 8px;
-        font-size: 14px;
-        font-weight: bold;
-    }
+  .input {
+    width: 90%;
+    background: transparent !important;
+    padding: 12px 0px;
+    background: #ffffff;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #757575;
 
-    .input {
-        width: 90%;
-        background: transparent !important;
-        padding: 12px 0px;
-        background: #FFFFFF;
-        border: 1px solid rgba(206, 206, 206, 0.5);
-        box-sizing: border-box;
-        border-radius: 10px;
-        color: #757575;
+    outline: none;
+    padding-left: 12px;
+  }
 
-        outline: none;
-        padding-left: 12px;
+  ::placeholder {
+    padding-left: 12px;
+    font-size: 14px;
+    color: #757575;
+  }
 
-    }
+  .input:hover {
+    border: 1px solid rgba(231, 49, 34, 0.5);
+  }
 
-    ::placeholder {
-        padding-left: 12px;
-        font-size: 14px;
-        color: #757575;
-    }
+  //checkbox
+  .main_checkbox {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 5px auto;
+  }
 
-    .input:hover {
-        border: 1px solid rgba(231, 49, 34, 0.5);
+  .round {
+    display: block;
+    width: 100%;
+  }
 
-    }
+  .round input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
 
-    //checkbox
-    .main_checkbox {
-        width: 90%;
-        display: flex;
-        justify-content: center;
-        margin: 5px auto;
-    }
+  .round label {
+    margin-left: 5px;
+    color: #a0a0a0;
+    position: relative;
+    cursor: pointer;
+    line-height: 23px;
+    font-size: 14px;
+  }
 
-    .round {
-        display: block;
-        width: 100%;
-    }
+  .round label:before {
+    content: "";
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 1px solid #a0a0a0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 50%;
+  }
 
+  .round input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid #d23022;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
 
-    .round input {
-        padding: 0;
-        height: initial;
-        width: initial;
-        margin-bottom: 0;
-        display: none;
-        cursor: pointer;
-    }
+  // select seguro medico
+  .main_select {
+    width: 100%;
+    padding: 12px 0;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
 
-    .round label {
-        margin-left: 5px;
-        color: #A0A0A0;
-        position: relative;
-        cursor: pointer;
-        line-height: 23px;
-        font-size: 14px;
-    }
+  .main_select select {
+    width: 90%;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding-left: 12px;
+    background: #ffffff;
+    color: #757575;
+    font-size: 13px;
+  }
 
-    .round label:before {
-        content: '';
-        -webkit-appearance: none;
-        background-color: transparent;
-        border: 1px solid #A0A0A0;
-        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
-        padding: 10px;
-        display: inline-block;
-        position: relative;
-        vertical-align: middle;
-        cursor: pointer;
-        margin-right: 5px;
-        border-radius: 50%;
-    }
+  .option {
+    padding: 12px 0;
+    background: #fff;
+    color: #000000;
+    font-size: 13px;
+  }
 
-    .round input:checked+label:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 2px;
-        left: 9px;
-        width: 6px;
-        height: 14px;
-        border: solid #D23022;
-        border-width: 0 2px 2px 0;
-        transform: rotate(45deg);
+  .buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
 
-    }
-
-    // select seguro medico
-    .main_select {
-        width: 100%;
-        padding: 12px 0;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        overflow: hidden;
-    }
-
-
-    .main_select select {
-        width: 90%;
-        box-shadow: none;
-        cursor: pointer;
-        padding: 12px 0;
-        border: 1px solid #EAEAEA;
-        border-radius: 10px;
-        padding-left: 12px;
-        background: #FFFFFF;
-        color: #757575;
-        font-size: 13px;
-
-
-    }
-
-    .option {
-        padding: 12px 0;
-        background: #fff;
-        color: #000000;
-        font-size: 13px;
-    }
-
-
+  .btn {
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px 20px;
+    background: #e73122;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
 }
