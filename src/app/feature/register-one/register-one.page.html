@@ -70,21 +70,19 @@
     <div class="datos">
       <div class="field-inline-block">
         <label class="label">Peso</label>
-        <input type="text" pattern="[0-9]*" maxlength="3" size="3" class="date-field" name="peso"
-          [(ngModel)]="user.peso" #peso="ngModel" [ngClass]="{ 'is-invalid': f.submitted && peso.invalid }" required
-          autocomplete="off" />
+        <input type="text" maxlength="8" size="8" class="date-field" name="peso" [(ngModel)]="user.peso" #peso="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && peso.invalid }" required autocomplete="off" />
       </div>
 
       <div class="field-inline-block">
         <label class="label">Altura</label>
-        <input type="text" pattern="[0-9]*" maxlength="3" size="3" class="date-field" name="altura"
-          [(ngModel)]="user.altura" #altura="ngModel" [ngClass]="{ 'is-invalid': f.submitted && altura.invalid }"
-          required autocomplete="off" />
+        <input type="text" maxlength="8" size="8" class="date-field" name="altura" [(ngModel)]="user.altura"
+          #altura="ngModel" [ngClass]="{ 'is-invalid': f.submitted && altura.invalid }" required autocomplete="off" />
       </div>
 
       <div class="field-inline-block">
         <label class="label">Cintura</label>
-        <input type="text" pattern="[0-9]*" maxlength="4" size="4" class="date-field date-field--year" name="cintura"
+        <input type="text" maxlength="10" size="10" class="date-field date-field--year" name="cintura"
           [(ngModel)]="user.cintura" #cintura="ngModel" [ngClass]="{ 'is-invalid': f.submitted && cintura.invalid }"
           required autocomplete="off" />
       </div>

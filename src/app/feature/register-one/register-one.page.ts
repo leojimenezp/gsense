@@ -34,7 +34,11 @@ export class RegisterOnePage implements OnInit {
 
   public onSubmit() {
 
-    this.user.fechanac = this.user.dia + '-' + this.user.mes + '-' + this.user.ano;
+    this.user.fechanac = this.user.ano + '-' + this.user.mes + '-' + this.user.dia;
+    this.user.peso = parseFloat(this.user.peso);
+    this.user.altura = parseFloat(this.user.altura);
+    this.user.cintura = parseFloat(this.user.cintura);
+    this.user.hemogoblina = parseFloat(this.user.hemogoblina);
     this.storageService.createStorage(USER_DATA, this.user);
     this.router.navigate(['/register-two']);
   }

@@ -24,26 +24,29 @@
     </div>
   </div>
 
-  <form id="main_form">
+  <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
     <div class="main__input">
       <label for="trabajo" class="text_input">¿En qué trabaja?</label>
-      <input class="input" id="trabajo" type="text" required />
+      <input class="input" type="text" name="trabajo" [(ngModel)]="user.trabajo" #trabajo="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && trabajo.invalid }" required autocomplete="off" />
     </div>
     <div class="main__input">
       <label for="turno" class="text_input">Turno de trabajo</label>
     </div>
     <div class="main_checkbox" id="turno">
       <div class="round">
-        <input type="checkbox" id="checkbox1" />
+        <input type="radio" id="checkbox1" value="Diurno" name="horario" [(ngModel)]="user.horario" #horario="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && horario.invalid }" required autocomplete="off" />
         <label for="checkbox1">Diurno</label>
       </div>
       <div class="round">
-        <input type="checkbox" id="checkbox2" />
+        <input type="radio" id="checkbox2" value="Nocturno" name="horario" [(ngModel)]="user.horario" #horario="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && horario.invalid }" required autocomplete="off" />
         <label for="checkbox2">Nocturno</label>
-
       </div>
       <div class="round">
-        <input type="checkbox" id="checkbox3" />
+        <input type="radio" id="checkbox3" value="Día / noche" name="horario" [(ngModel)]="user.horario"
+          #horario="ngModel" [ngClass]="{ 'is-invalid': f.submitted && horario.invalid }" required autocomplete="off" />
         <label for="checkbox3">Día / noche</label>
       </div>
     </div>
@@ -51,7 +54,8 @@
       <label for="seguro" class="text_input">¿Qué seguro medico tiene?</label>
     </div>
     <div id="seguro" class="main_select">
-      <select>
+      <select name="seguro" [(ngModel)]="user.seguro" #seguro="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && seguro.invalid }" required autocomplete="off">
         <option class="option" value="1">Elija una opción</option>
         <option class="option" value="2">Sanitas</option>
         <option class="option" value="3">Sura</option>
@@ -60,8 +64,9 @@
     <div class="main__input">
       <label for="seguro" class="text_input">¿Fue diagnosticado con?</label>
     </div>
-    <div id="seguro" class="main_select">
-      <select>
+    <div id="diagnostico" class="main_select">
+      <select name="diagnostico" [(ngModel)]="user.diagnostico" #diagnostico="ngModel"
+        [ngClass]="{ 'is-invalid': f.submitted && diagnostico.invalid }" required autocomplete="off">
         <option class="option" value="1">Elija una opción</option>
         <option class="option" value="2">Cáncer</option>
         <option class="option" value="3">Enfermedad terminal</option>
@@ -72,11 +77,15 @@
     </div>
     <div class="main_checkbox" id="turno">
       <div class="round">
-        <input type="checkbox" id="si" />
+        <input type="radio" id="si" value="true" name="medicamentosdiab" [(ngModel)]="user.medicamentosdiab"
+          #medicamentosdiab="ngModel" [ngClass]="{ 'is-invalid': f.submitted && medicamentosdiab.invalid }" required
+          autocomplete="off" />
         <label for="si">Si</label>
       </div>
       <div class="round">
-        <input type="checkbox" id="no" />
+        <input type="radio" id="no" value="false" name="medicamentosdiab" [(ngModel)]="user.medicamentosdiab"
+          #medicamentosdiab="ngModel" [ngClass]="{ 'is-invalid': f.submitted && medicamentosdiab.invalid }" required
+          autocomplete="off" />
         <label for="no">No</label>
       </div>
     </div>
@@ -85,13 +94,20 @@
     </div>
     <div class="main_checkbox" id="turno">
       <div class="round">
-        <input type="checkbox" id="si" />
-        <label for="si">Si</label>
+        <input type="radio" id="siInsulinadiab" value="true" name="insulinadiab" [(ngModel)]="user.insulinadiab"
+          #insulinadiab="ngModel" [ngClass]="{ 'is-invalid': f.submitted && insulinadiab.invalid }" required
+          autocomplete="off" />
+        <label for="siInsulinadiab">Si</label>
       </div>
       <div class="round">
-        <input type="checkbox" id="no" />
-        <label for="no">No</label>
+        <input type="radio" id="noInsulinadiab" value="false" name="insulinadiab" [(ngModel)]="user.insulinadiab"
+          #insulinadiab="ngModel" [ngClass]="{ 'is-invalid': f.submitted && insulinadiab.invalid }" required
+          autocomplete="off" />
+        <label for="noInsulinadiab">No</label>
       </div>
+    </div>
+    <div class="buttons">
+      <button class="btn" type="submit">Finalizar registro</button>
     </div>
   </form>
 </ion-content>

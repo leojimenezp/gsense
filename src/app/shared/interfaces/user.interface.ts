@@ -1,4 +1,5 @@
 export interface UserModel {
+    id?: number;
     nombre?: string;
     correo?: string;
     telefono?: string;
@@ -8,8 +9,14 @@ export interface UserModel {
     mes?: number;
     ano?: number;
     fechanac?: string;
-    peso?: number;
-    altura?: number;
-    cintura?: number;
-    hemogoblina?: string;
+    peso?: any;
+    altura?: any;
+    cintura?: any;
+    hemogoblina?: any;
+    trabajo?: string;
+    horario?: string;
+    seguro?: string;
+    diagnostico?: string;
+    medicamentosdiab?: Boolean;
+    insulinadiab?: Boolean;
 }
