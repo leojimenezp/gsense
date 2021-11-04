@@ -49,6 +49,7 @@ export class RegisterTwoPage implements OnInit {
 
     this.userService.createAcount(this.user).subscribe(response => {
       if (response.id != null) {
+        this.storageService.removeStorage(USER_DATA);
         Swal.fire('Registro exitoso', 'Cuenta creada', 'success');
         this.router.navigate(['/login']);
       }
