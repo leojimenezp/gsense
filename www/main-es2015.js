@@ -50,7 +50,7 @@ const routes = [
     },
     {
         path: 'signup',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_feature_signup_signup_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! @feature/signup/signup.module */ 47400)).then(m => m.SignupPageModule)
+        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_signup_signup_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! @feature/signup/signup.module */ 47400)).then(m => m.SignupPageModule)
     },
     {
         path: 'splash',
@@ -58,15 +58,19 @@ const routes = [
     },
     {
         path: 'register-one',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_feature_register-one_register-one_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! @feature/register-one/register-one.module */ 30399)).then(m => m.RegisterOnePageModule)
+        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_register-one_register-one_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! @feature/register-one/register-one.module */ 30399)).then(m => m.RegisterOnePageModule)
     },
     {
         path: 'register-two',
-        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_feature_register-two_register-two_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! @feature/register-two/register-two.module */ 83593)).then(m => m.RegisterTwoPageModule)
+        loadChildren: () => Promise.all(/*! import() */[__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_register-two_register-two_module_ts")]).then(__webpack_require__.bind(__webpack_require__, /*! @feature/register-two/register-two.module */ 83593)).then(m => m.RegisterTwoPageModule)
     },
     {
         path: 'register-three',
         loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_feature_register-three_register-three_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! @feature/register-three/register-three.module */ 76959)).then(m => m.RegisterThreePageModule)
+    },
+    {
+        path: 'tabs',
+        loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_feature_tabs_tabs_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./feature/tabs/tabs.module */ 95676)).then(m => m.TabsPageModule)
     },
 ];
 let AppRoutingModule = class AppRoutingModule {
@@ -647,7 +651,7 @@ module.exports = webpackAsyncContext;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n");
 
 /***/ })
 

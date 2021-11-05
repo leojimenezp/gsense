@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NgxLoadingModule, ngxLoadingAnimationTypes } from 'ngx-loading';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,8 +14,14 @@ import { RegisterTwoPage } from './register-two.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterTwoPageRoutingModule
+    RegisterTwoPageRoutingModule,
+    NgxLoadingModule.forRoot({
+      animationType: ngxLoadingAnimationTypes.circle,
+      backdropBackgroundColour: 'rgba(0,0,0,0.1)',
+      backdropBorderRadius: '8px',
+      primaryColour: '#E73122'
+    })
   ],
   declarations: [RegisterTwoPage]
 })
-export class RegisterTwoPageModule {}
+export class RegisterTwoPageModule { }

@@ -438,6 +438,61 @@ const openURL = async (url, ev, direction, animation) => {
 
 
 
+/***/ }),
+
+/***/ 29686:
+/*!*********************************************!*\
+  !*** ./src/app/shared/constants/storage.ts ***!
+  \*********************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "USER_DATA": function() { return /* binding */ USER_DATA; }
+/* harmony export */ });
+const USER_DATA = "userData";
+
+
+
+/***/ }),
+
+/***/ 21662:
+/*!*********************************************************!*\
+  !*** ./src/app/shared/services/localstorage.service.ts ***!
+  \*********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "localStorageService": function() { return /* binding */ localStorageService; }
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ 61855);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ 42741);
+
+
+let localStorageService = class localStorageService {
+    constructor() { }
+    createStorage(name, data) {
+        localStorage.setItem(name, JSON.stringify(data));
+    }
+    getStorage(name) {
+        return localStorage.getItem(name);
+    }
+    removeStorage(name) {
+        localStorage.removeItem(name);
+    }
+};
+localStorageService.ctorParameters = () => [];
+localStorageService = (0,tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable)({
+        providedIn: 'root'
+    })
+], localStorageService);
+
+
+
 /***/ })
 
 }]);

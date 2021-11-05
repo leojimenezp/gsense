@@ -34,7 +34,7 @@ const routes: Routes = [
 
   {
     path: 'tabs',
-    loadChildren: () => import('./feature/tabs/tabs.module').then( m => m.TabsPageModule)
+    loadChildren: () => import('./feature/tabs/tabs.module').then(m => m.TabsPageModule)
   },
 ];
 

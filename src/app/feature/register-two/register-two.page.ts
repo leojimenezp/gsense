@@ -1,11 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Subject } from 'rxjs';
 import { UserModel } from '@shared/interfaces/user.interface';
 import { localStorageService } from '@shared/services/localstorage.service';
+import { LoaderService } from '@shared/services/loader.service';
 import { UserService } from '@shared/services/user.service';
 import { USER_DATA } from '@shared/constants/storage';
 import Swal from 'sweetalert2';
-
 @Component({
   selector: 'app-register-two',
   templateUrl: './register-two.page.html',
@@ -14,10 +15,12 @@ import Swal from 'sweetalert2';
 export class RegisterTwoPage implements OnInit {
 
   public user: UserModel = {};
+  public isLoading: Subject<boolean> = this.loader.isLoading;
 
   constructor(
     private storageService: localStorageService,
     private userService: UserService,
+    private loader: LoaderService,
     private router: Router
   ) { }
 

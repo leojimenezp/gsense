@@ -1,211 +1,199 @@
 * {
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 
 ion-toolbar {
-    --background: #E73122;
-    text-transform: initial;
-    color: rgb(255, 255, 255);
+  --background: #e73122;
+  text-transform: initial;
+  color: rgb(255, 255, 255);
 
-    .bars {
-        display: flex;
-        justify-content: flex-end;
-        margin-right: 20px;
-    }
+  .bars {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
 }
 
 ion-content {
+  --background: #fbfbfb;
 
-    --background: #fbfbfb;
+  .container {
+    width: 100%;
+  }
 
-    .container {
-        width: 100%;
-    }
+  .container h3 {
+    color: #e73122;
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 40px;
+  }
 
-    .container h3 {
-        color: #E73122;
-        width: 90%;
-        margin: auto;
-        display: block;
-        margin-top: 40px;
-    }
+  .container p {
+    color: #757575;
+    width: 90%;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    line-height: 20px;
+    margin-bottom: 40px;
+  }
 
-    .container p {
-        color: #757575;
-        width: 90%;
-        margin: auto;
-        display: block;
-        margin-top: 20px;
-        line-height: 20px;
-        margin-bottom: 40px;
-    }
+  //Progress number
+  .progress {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+  }
 
-    //Progress number
-    .progress {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
-        margin: auto;
-    }
+  .num {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #d4d4d4;
+    box-sizing: border-box;
+    border-radius: 50%;
+  }
 
-    .num {
-        display: inline-block;
-        width: 54px;
-        height: 54px;
-        border: 1px solid #D4D4D4;
-        box-sizing: border-box;
-        border-radius: 50%;
-    }
+  .num span {
+    display: block;
+    color: #d4d4d4;
+    text-align: center;
+    line-height: 54px;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+  }
 
-    .num span {
-        display: block;
-        color: #D4D4D4;
-        text-align: center;
-        line-height: 54px;
-        font-size: 25px;
-        font-weight: bold;
-        letter-spacing: 0.05em;
-    }
+  .active {
+    border-color: #e73122 !important;
+  }
 
-    .active {
-        border-color: #E73122 !important;
-    }
+  // Linea de los paso 1 a 3.
+  .line {
+    display: inline-block;
+    width: 40px;
+    height: 1px;
+    background: #d4d4d4;
+  }
 
-    // Linea de los paso 1 a 3.
-    .line {
-        display: inline-block;
-        width: 40px;
-        height: 1px;
-        background: #D4D4D4;
-    }
+  //Formulario de registro
 
-    //Formulario de registro
+  #main_form {
+    width: 100%;
+    margin-top: 35px;
+  }
 
-    #main_form {
-        width: 100%;
-        margin-top: 35px;
-    }
+  .main__input {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
 
-    .main__input {
-        flex-direction: column;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
+  .text_input {
+    display: flex;
+    width: 90%;
+    color: #757575;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-    }
+  .input {
+    width: 90%;
+    background: transparent !important;
+    padding: 12px 0px;
+    background: #ffffff;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #757575;
 
-    .text_input {
-        display: flex;
-        width: 90%;
-        color: #757575;
-        margin-left: 5px;
-        margin-bottom: 8px;
-        font-size: 14px;
-        font-weight: bold;
-    }
+    outline: none;
+    padding-left: 12px;
+  }
 
-    .input {
-        width: 90%;
-        background: transparent !important;
-        padding: 12px 0px;
-        background: #FFFFFF;
-        border: 1px solid rgba(206, 206, 206, 0.5);
-        box-sizing: border-box;
-        border-radius: 10px;
-        color: #757575;
+  ::placeholder {
+    padding-left: 12px;
+    font-size: 14px;
+    color: #757575;
+  }
 
-        outline: none;
-        padding-left: 12px;
+  .input:hover {
+    border: 1px solid rgba(231, 49, 34, 0.5);
+  }
 
-    }
+  // Form fecha y datos
+  .fecha,
+  .datos {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+  }
 
-    ::placeholder {
-        padding-left: 12px;
-        font-size: 14px;
-        color: #757575;
-    }
+  label {
+    display: block;
+    color: #a0a0a0;
+    font-size: 12px;
+    line-height: 120%;
+    margin-left: 5px;
+  }
 
-    .input:hover {
-        border: 1px solid rgba(231, 49, 34, 0.5);
+  .date-field {
+    width: 50px;
+    text-align: center;
+    width: 105px;
+    height: 45px;
+    background: #ffffff;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #000;
+    outline: none;
+  }
 
-    }
+  .field-inline-block {
+    display: inline-block;
+    margin: auto;
+  }
 
-    // Form fecha y datos
-    .fecha,
-    .datos {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin: auto;
-        margin-top: 20px;
-    }
+  // Color peso, altura y cintura
+  .label {
+    color: #757575;
+  }
 
-    label {
-        display: block;
-        color: #A0A0A0;
-        font-size: 12px;
-        line-height: 120%;
-        margin-left: 5px;
-    }
+  //Button guardar y seguir
+  .buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+  }
 
-    .date-field {
-        width: 50px;
-        text-align: center;
-        width: 105px;
-        height: 45px;
-        background: #FFFFFF;
-        border: 1px solid rgba(206, 206, 206, 0.5);
-        box-sizing: border-box;
-        border-radius: 10px;
-        color: #000;
-        outline: none;
-    }
-
-
-    .field-inline-block {
-        display: inline-block;
-        margin: auto;
-
-    }
-
-    // Color peso, altura y cintura
-    .label {
-        color: #757575;
-
-    }
-
-    //Button guardar y seguir
-    .buttons {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 90px;
-
-    }
-
-
-    .btn {
-        text-transform: uppercase;
-        margin-top: 20px;
-        width: 90%;
-        padding: 18px 20px;
-        background: #E73122;
-        border-radius: 50px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-
-
-
+  .btn {
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px 20px;
+    background: #e73122;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+  }
 }

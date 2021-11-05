@@ -1,4 +1,10 @@
 (function () {
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+  function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
   function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
   function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
@@ -703,6 +709,109 @@
       }();
       /***/
 
+    },
+
+    /***/
+    29686:
+    /*!*********************************************!*\
+      !*** ./src/app/shared/constants/storage.ts ***!
+      \*********************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "USER_DATA": function USER_DATA() {
+          return (
+            /* binding */
+            _USER_DATA
+          );
+        }
+        /* harmony export */
+
+      });
+
+      var _USER_DATA = "userData";
+      /***/
+    },
+
+    /***/
+    21662:
+    /*!*********************************************************!*\
+      !*** ./src/app/shared/services/localstorage.service.ts ***!
+      \*********************************************************/
+
+    /***/
+    function _(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+      "use strict";
+
+      __webpack_require__.r(__webpack_exports__);
+      /* harmony export */
+
+
+      __webpack_require__.d(__webpack_exports__, {
+        /* harmony export */
+        "localStorageService": function localStorageService() {
+          return (
+            /* binding */
+            _localStorageService
+          );
+        }
+        /* harmony export */
+
+      });
+      /* harmony import */
+
+
+      var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(
+      /*! tslib */
+      61855);
+      /* harmony import */
+
+
+      var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(
+      /*! @angular/core */
+      42741);
+
+      var _localStorageService = /*#__PURE__*/function () {
+        function localStorageService() {
+          _classCallCheck(this, localStorageService);
+        }
+
+        _createClass(localStorageService, [{
+          key: "createStorage",
+          value: function createStorage(name, data) {
+            localStorage.setItem(name, JSON.stringify(data));
+          }
+        }, {
+          key: "getStorage",
+          value: function getStorage(name) {
+            return localStorage.getItem(name);
+          }
+        }, {
+          key: "removeStorage",
+          value: function removeStorage(name) {
+            localStorage.removeItem(name);
+          }
+        }]);
+
+        return localStorageService;
+      }();
+
+      _localStorageService.ctorParameters = function () {
+        return [];
+      };
+
+      _localStorageService = (0, tslib__WEBPACK_IMPORTED_MODULE_0__.__decorate)([(0, _angular_core__WEBPACK_IMPORTED_MODULE_1__.Injectable)({
+        providedIn: 'root'
+      })], _localStorageService);
+      /***/
     }
   }]);
 })();
