@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="72f6a98d-e10c-400e-96b6-030bad4809e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/common-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/common-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/common-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/common-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_focus-visible-f4ad4f1a_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_focus-visible-f4ad4f1a_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_focus-visible-f4ad4f1a_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_focus-visible-f4ad4f1a_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_input-shims-73f15161_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_input-shims-73f15161_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_input-shims-73f15161_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_input-shims-73f15161_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-action-sheet_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-action-sheet_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-action-sheet_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-action-sheet_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-alert_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-alert_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-alert_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-alert_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-app_8_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-app_8_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-app_8_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-app_8_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-avatar_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-avatar_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-avatar_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-avatar_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-back-button_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-back-button_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-back-button_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-back-button_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-backdrop_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-backdrop_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-backdrop_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-backdrop_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-button_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-button_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-button_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-button_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-card_5_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-card_5_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-card_5_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-card_5_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-checkbox_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-checkbox_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-checkbox_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-checkbox_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-chip_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-chip_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-chip_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-chip_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-col_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-col_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-col_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-col_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-datetime_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-datetime_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-datetime_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-datetime_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-fab_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-fab_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-fab_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-fab_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-img_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-img_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-img_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-img_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-infinite-scroll_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-infinite-scroll_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-infinite-scroll_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-infinite-scroll_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-input_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-input_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-input_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-input_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item-option_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item-option_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item-option_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item-option_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item_8_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item_8_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item_8_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-item_8_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-loading_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-loading_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-loading_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-loading_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-menu_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-menu_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-menu_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-menu_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-modal_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-modal_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-modal_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-modal_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-nav_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-nav_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-nav_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-nav_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-popover_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-popover_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-popover_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-popover_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-progress-bar_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-progress-bar_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-progress-bar_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-progress-bar_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-radio_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-radio_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-radio_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-radio_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-range_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-range_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-range_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-range_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-refresher_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-refresher_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-refresher_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-refresher_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-reorder_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-reorder_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-reorder_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-reorder_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-ripple-effect_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-ripple-effect_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-ripple-effect_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-ripple-effect_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-route_4_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-route_4_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-route_4_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-route_4_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-searchbar_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-searchbar_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-searchbar_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-searchbar_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-segment_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-segment_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-segment_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-segment_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-select_3_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-select_3_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-select_3_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-select_3_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-slide_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-slide_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-slide_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-slide_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-spinner_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-spinner_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-spinner_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-spinner_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-split-pane_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-split-pane_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-split-pane_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-split-pane_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab-bar_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab-bar_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab-bar_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab-bar_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab_2_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab_2_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab_2_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-tab_2_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-text_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-text_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-text_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-text_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-textarea_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-textarea_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-textarea_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-textarea_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toast_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toast_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toast_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toast_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toggle_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toggle_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toggle_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-toggle_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-virtual-scroll_entry_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-virtual-scroll_entry_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-virtual-scroll_entry_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_ion-virtual-scroll_entry_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_keyboard-5742b5da_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_keyboard-5742b5da_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_keyboard-5742b5da_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_keyboard-5742b5da_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_shadow-css-a3f00b33_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_shadow-css-a3f00b33_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_shadow-css-a3f00b33_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_shadow-css-a3f00b33_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_status-tap-5c3a5bca_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_status-tap-5c3a5bca_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_status-tap-5c3a5bca_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_status-tap-5c3a5bca_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swipe-back-fae97365_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swipe-back-fae97365_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swipe-back-fae97365_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swipe-back-fae97365_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swiper_bundle-6c5e7804_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swiper_bundle-6c5e7804_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swiper_bundle-6c5e7804_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_swiper_bundle-6c5e7804_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_tap-click-cc1ae2b2_js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_tap-click-cc1ae2b2_js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_tap-click-cc1ae2b2_js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/node_modules_ionic_core_dist_esm_tap-click-cc1ae2b2_js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-core-js-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-core-js-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-core-js-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-core-js-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-css-shim-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-css-shim-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-css-shim-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-css-shim-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-dom-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-dom-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-dom-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-dom-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/polyfills-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/runtime-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/runtime-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_home_home_module_ts-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_login_login_module_ts-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-one_register-one_module_ts-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-three_register-three_module_ts-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_register-two_register-two_module_ts-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_signup_signup_module_ts-es2015.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_signup_signup_module_ts-es2015.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_signup_signup_module_ts-es5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_signup_signup_module_ts-es5.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es2015.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es2015.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es5.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/src_app_feature_splash_splash_module_ts-es5.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/www/styles.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles.css.map" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="20SiR9eS42Y6edFrdFx67gFtpO2" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72f6a98d-e10c-400e-96b6-030bad4809e1" name="Default Changelist" comment="" />
+      <created>1636044378379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636044378379</updated>
+    </task>
+    <servers />
+  </component>
+</project>

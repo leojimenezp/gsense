@@ -103,9 +103,9 @@
       }, {
         path: 'signup',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() */
-          "src_app_feature_signup_signup_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          [__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_signup_signup_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
           /*! @feature/signup/signup.module */
           47400)).then(function (m) {
             return m.SignupPageModule;
@@ -125,9 +125,9 @@
       }, {
         path: 'register-one',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() */
-          "src_app_feature_register-one_register-one_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          [__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_register-one_register-one_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
           /*! @feature/register-one/register-one.module */
           30399)).then(function (m) {
             return m.RegisterOnePageModule;
@@ -136,9 +136,9 @@
       }, {
         path: 'register-two',
         loadChildren: function loadChildren() {
-          return __webpack_require__.e(
+          return Promise.all(
           /*! import() */
-          "src_app_feature_register-two_register-two_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          [__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_register-two_register-two_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
           /*! @feature/register-two/register-two.module */
           83593)).then(function (m) {
             return m.RegisterTwoPageModule;
@@ -153,6 +153,17 @@
           /*! @feature/register-three/register-three.module */
           76959)).then(function (m) {
             return m.RegisterThreePageModule;
+          });
+        }
+      }, {
+        path: 'tabs',
+        loadChildren: function loadChildren() {
+          return __webpack_require__.e(
+          /*! import() */
+          "src_app_feature_tabs_tabs_module_ts").then(__webpack_require__.bind(__webpack_require__,
+          /*! ./feature/tabs/tabs.module */
+          95676)).then(function (m) {
+            return m.TabsPageModule;
           });
         }
       }];
@@ -892,7 +903,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-app>\n  <ion-router-outlet></ion-router-outlet>\n</ion-app>\n";
+      __webpack_exports__["default"] = "<ion-app>\r\n  <ion-router-outlet></ion-router-outlet>\r\n</ion-app>\r\n";
       /***/
     }
   },

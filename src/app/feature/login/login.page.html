@@ -1,9 +1,6 @@
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button color="primary">
-        <ion-icon slot="icon-only" name="arrow-back"> </ion-icon>
-      </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
       <ion-button routerLink="/signup">Sign up</ion-button>
@@ -18,19 +15,7 @@
   </div>
   <span id="text">Sing in</span>
   <div class="btn__login">
-    <button class="btn__google" routerLink="/register-two" (click)="loginGoogle()"><i
-        class="fab fa-google-plus-g x1"></i></button>
+    <button class="btn__google" (click)="loginGoogle()"><i class="fab fa-google-plus-g x1"></i></button>
     <button class="btn__micro"><i class="fab fa-windows x2"> </i></button>
-  </div>
-  <span class="or">Or</span>
-  <form id="main__form">
-    <input shape="round" class="input" type="email " placeholder="Email" />
-    <input shape="round" class="input" type="password" placeholder="Password" />
-
-  </form>
-  <div id="buttons">
-    <button id="btn" type="submit" routerLink="/home">Login</button>
-    <button class="register" routerLink="/signup"> You have not registered?<span class="click"> Click
-        Aquí</span></button>
   </div>
 </ion-content>

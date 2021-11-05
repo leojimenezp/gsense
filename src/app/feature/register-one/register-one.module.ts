@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { NgxMaskIonicModule } from 'ngx-mask-ionic'
 
 import { IonicModule } from '@ionic/angular';
 
@@ -13,8 +14,9 @@ import { RegisterOnePage } from './register-one.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterOnePageRoutingModule
+    RegisterOnePageRoutingModule,
+    NgxMaskIonicModule
   ],
   declarations: [RegisterOnePage]
 })
-export class RegisterOnePageModule {}
+export class RegisterOnePageModule { }

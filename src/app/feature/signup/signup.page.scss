@@ -1,134 +1,124 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 ion-toolbar {
-    --background: #fbfbfb;
-    text-transform: initial;
+  --background: #fbfbfb;
+  text-transform: initial;
 }
 
 ion-content {
-    --background: #fbfbfb;
+  --background: #fbfbfb;
 
-    .logo {
-        margin-top: 60px;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  .logo {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    .image {
-        width: 152px;
-        height: 34px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        mix-blend-mode: multiply;
-    }
+  .image {
+    width: 152px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: multiply;
+  }
 
-    h3 {
-        color: #E73122;
-        width: 90%;
-        margin: auto;
-        margin-top: 50px;
-        font-weight: bold;
-        font-size: 20px;
+  h3 {
+    color: #e73122;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 20px;
+  }
 
-    }
+  .text_registro {
+    width: 90%;
+    margin: auto;
+    display: block;
+    letter-spacing: 0.02em;
+    color: #757575;
+    margin-top: 15px;
+    font-size: 15px;
+  }
 
-    .text_registro {
-        width: 90%;
-        margin: auto;
-        display: block;
-        letter-spacing: 0.02em;
-        color: #757575;
-        margin-top: 15px;
-        font-size: 15px;
-    }
+  #form {
+    width: 100%;
+    margin-top: 30px;
+  }
 
-    #form {
-        width: 100%;
-        margin-top: 30px;
-    }
+  .main__input {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
 
-    .main__input {
-        flex-direction: column;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
+  .text_input {
+    display: flex;
+    width: 90%;
+    color: #757575;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-    }
+  .input {
+    width: 90%;
+    background: transparent !important;
+    padding: 12px 0px;
+    background: #ffffff;
+    border: 1px solid rgba(206, 206, 206, 0.5);
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #757575;
+  }
 
-    .text_input {
-        display: flex;
-        width: 90%;
-        color: #757575;
-        margin-left: 5px;
-        margin-bottom: 8px;
-        font-size: 14px;
-        font-weight: bold;
+  .input:hover {
+    border: 1px solid rgba(231, 49, 34, 0.5);
+  }
 
-    }
+  .buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
 
-    .input {
-        width: 90%;
-        background: transparent !important;
-        padding: 12px 0px;
-        background: #FFFFFF;
-        border: 1px solid rgba(206, 206, 206, 0.5);
-        box-sizing: border-box;
-        border-radius: 10px;
-        padding-left: 15px;
-        font-size: 14px;
-        color: #757575;
+  .buttons .btn {
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px 20px;
+    background: #e73122;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+  }
 
-    }
+  .register {
+    margin-top: 40px;
+    color: #757575;
+    background: #fbfbfb;
+    font-weight: 400;
+    width: 80%;
+  }
 
-    .input:hover {
-        border: 1px solid rgba(231, 49, 34, 0.5);
-
-    }
-
-
-    .buttons {
-        display: flex;
-        flex-flow: column wrap;
-        justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    .buttons .btn {
-        text-transform: uppercase;
-        margin-top: 20px;
-        width: 90%;
-        padding: 18px 20px;
-        background: #E73122;
-        border-radius: 50px;
-        font-weight: bold;
-        letter-spacing: 1px;
-    }
-
-
-    .register {
-        margin-top: 40px;
-        color: #757575;
-        background: #fbfbfb;
-        font-weight: 400;
-        width: 80%;
-    }
-
-    .click {
-        color: #E73122;
-        font-weight: bold;
-        font-size: 14px;
-
-    }
-
-    
+  .click {
+    color: #e73122;
+    font-weight: bold;
+    font-size: 14px;
+  }
 }
