@@ -16,7 +16,11 @@ export class LoginPage implements OnInit {
   }
 
   public loginGoogle() {
-    this.authService.authenticateWithGoogle();
+    this.authService.authenticateWithGoogle().then(() => {
+      alert('Usuario autenticado')
+    }).catch(err => {
+      alert('Error ' + err);
+    })
   }
 
 }

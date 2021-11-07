@@ -1,20 +1,21 @@
 import { Injectable } from '@angular/core';
-import { Auth } from '@angular/fire/auth';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
-
+import firebase from '@firebase/app-compat';
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
   constructor(
-    private auth: Auth,
+    private AFauth: AngularFireAuth,
     private google: GooglePlus,
   ) { }
 
   public authenticateWithGoogle() {
-    this.google.login({}).then(response => {
+    return this.google.login({}).then(response => {
       const userData = response;
+      return this.AFauth.signInWithCredential(firebase.auth.GoogleAuthProvider.credential(null, userData.accessToken));
     })
   }
 }
