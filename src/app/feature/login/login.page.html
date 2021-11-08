@@ -1,21 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-buttons slot="start">
-    </ion-buttons>
+    <ion-buttons slot="start"> </ion-buttons>
     <ion-buttons slot="end">
       <ion-button routerLink="/signup">Sign up</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/home">login</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/schedule">login</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
   <div id="logo">
     <img id="img" src="assets/logonutrix.jpeg" />
   </div>
+
   <span id="text">Sing in</span>
   <div class="btn__login">
-    <button class="btn__google" (click)="loginGoogle()"><i class="fab fa-google-plus-g x1"></i></button>
+    <button class="btn__google" (click)="loginGoogle()">
+      <i class="fab fa-google-plus-g x1"></i>
+    </button>
     <button class="btn__micro"><i class="fab fa-windows x2"> </i></button>
   </div>
 </ion-content>

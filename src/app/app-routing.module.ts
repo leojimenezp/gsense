@@ -36,6 +36,19 @@ const routes: Routes = [
     path: 'tabs',
     loadChildren: () => import('./feature/tabs/tabs.module').then(m => m.TabsPageModule)
   },
+  {
+    path: 'reg-device',
+    loadChildren: () => import('./feature/reg-device/reg-device.module').then( m => m.RegDevicePageModule)
+  },
+  {
+    path: 'transbank',
+    loadChildren: () => import('./feature/transbank/transbank.module').then( m => m.TransbankPageModule)
+  },
+  {
+    path: 'schedule',
+    loadChildren: () => import('./feature/schedule/schedule.module').then( m => m.SchedulePageModule)
+  },
+ 
 ];
 
 @NgModule({

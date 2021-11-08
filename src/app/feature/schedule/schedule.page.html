@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title><i class="fas fa-bars bars"></i></ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-infinite-scroll>
+    <div class="container">
+      <h3>Agendar cita</h3>
+    </div>
+
+    <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+      <div class="main__input">
+        <label for="seguro" class="text_input">Selecciona el médico</label>
+      </div>
+      <div id="seguro" class="main_select">
+        <select>
+          <option class="option" value="1">Elija una opción</option>
+          <option class="option" value="2">Sanitas</option>
+          <option class="option" value="3">Sura</option>
+        </select>
+      </div>
+      <div class="main__input">
+        <label for="seguro" class="text_input"
+          >Selecciona fecha a agendar</label
+        >
+      </div>
+      <div id="seguro" class="main_select">
+        <select>
+          <option class="option" value="1">Elija una opción</option>
+          <option class="option" value="2">Sanitas</option>
+          <option class="option" value="3">Sura</option>
+        </select>
+      </div>
+
+      <div class="buttons">
+        <button class="btn" type="submit">Agendar</button>
+      </div>
+    </form>
+  </ion-infinite-scroll>
+</ion-content>
