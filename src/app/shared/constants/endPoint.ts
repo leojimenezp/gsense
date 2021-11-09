@@ -1,3 +1,10 @@
 const API = "https://gsense.greentechapp.com/api";
 const USER = "user";
-export { API, USER };
+const DOCTOR = "doctor";
+const SHEDULE = "cita";
+const DEVICE = "equipo";
+const SERVICES = "servicios";
+const USER_SERVICE = "usuarioservicioservicio";
+const DOCTOR_CALENDAR = "calendariomedico";
+
+export { API, USER, DOCTOR, SHEDULE, DEVICE, SERVICES, USER_SERVICE, DOCTOR_CALENDAR };
