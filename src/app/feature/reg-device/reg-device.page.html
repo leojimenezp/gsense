@@ -1,3 +1,4 @@
+<ngx-loading *ngIf="isLoading | async" [show]="true"> </ngx-loading>
 <ion-header>
   <ion-toolbar>
     <ion-title><i class="fas fa-bars bars"></i></ion-title>
@@ -13,35 +14,19 @@
     <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
       <div class="main__input">
         <label class="text_input">Serial</label>
-        <input
-          class="input"
-          
-          required
-          autocomplete="off"
-        />
+        <input class="input" name="serial" [(ngModel)]="device.serial" #serial="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && serial.invalid }" required autocomplete="off" />
       </div>
       <div class="main__input">
         <label class="text_input">Descripción</label>
-        <input
-          class="input"
-          
-          required
-          autocomplete="off"
-        />
+        <input class="input" name="deacripcion" [(ngModel)]="device.deacripcion" #deacripcion="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && deacripcion.invalid }" required autocomplete="off" />
       </div>
       <div class="main__input">
         <label class="text_input">NickName</label>
-        <input
-          class="input"
-          
-          required
-          autocomplete="off"
-        />
+        <input class="input" name="nickname" [(ngModel)]="device.nickname" #nickname="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && nickname.invalid }" required autocomplete="off" />
       </div>
-      
-      
-      
-      
 
       <div class="buttons">
         <button class="btn" type="submit">Registrar</button>
