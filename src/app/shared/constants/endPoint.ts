@@ -1,3 +1,5 @@
 const API = "https://gsense.greentechapp.com/api";
 const USER = "user";
-export { API, USER };
+const DOCTOR = "doctor";
+const QUOTE = "cita";
+export { API, USER, DOCTOR, QUOTE };

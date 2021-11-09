@@ -14,23 +14,18 @@
       <div class="main__input">
         <label for="seguro" class="text_input">Selecciona el médico</label>
       </div>
-      <div id="seguro" class="main_select">
-        <select>
-          <option class="option" value="1">Elija una opción</option>
-          <option class="option" value="2">Sanitas</option>
-          <option class="option" value="3">Sura</option>
+      <div class="main_select">
+        <select (change)="getCalendarDoctor($event.target.value)">
+          <option value="">Seleccione...</option>
+          <option *ngFor="let doctor of listDoctors" value="{{doctor.id}}">{{ doctor.nombre }}</option>
         </select>
       </div>
       <div class="main__input">
-        <label for="seguro" class="text_input"
-          >Selecciona fecha a agendar</label
-        >
+        <label for="seguro" class="text_input">Selecciona fecha a agendar</label>
       </div>
-      <div id="seguro" class="main_select">
+      <div class="main_select">
         <select>
-          <option class="option" value="1">Elija una opción</option>
-          <option class="option" value="2">Sanitas</option>
-          <option class="option" value="3">Sura</option>
+
         </select>
       </div>
 
