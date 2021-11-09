@@ -1,9 +1,51 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>reg_device</ion-title>
+    <ion-title><i class="fas fa-bars bars"></i></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-infinite-scroll>
+    <div class="container">
+      <h3>Registrar dispositivo</h3>
+    </div>
 
+    <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+      <div class="main__input">
+        <label class="text_input">Serial</label>
+        <input
+          class="input"
+          
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="main__input">
+        <label class="text_input">Descripción</label>
+        <input
+          class="input"
+          
+          required
+          autocomplete="off"
+        />
+      </div>
+      <div class="main__input">
+        <label class="text_input">NickName</label>
+        <input
+          class="input"
+          
+          required
+          autocomplete="off"
+        />
+      </div>
+      
+      
+      
+      
+
+      <div class="buttons">
+        <button class="btn" type="submit">Registrar</button>
+      </div>
+    </form>
+  </ion-infinite-scroll>
 </ion-content>

@@ -1,9 +1,53 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>transbank</ion-title>
+    <ion-title><i class="fas fa-bars bars"></i></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-infinite-scroll>
+    <div class="container">
+      <h3>Comprar servicio</h3>
+    </div>
 
+    <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+
+      <div class="main__input">
+        <label for="seguro" class="text_input">Selecciona un paquete</label>
+      </div>
+      <div id="seguro" class="main_select">
+        <select
+          name="seguro"
+          
+          required
+          autocomplete="off"
+        >
+          <option class="option" value="1">Elija una opción</option>
+          <option class="option" value="2">Pa...</option>
+          
+        </select>
+      </div>
+
+      <div class="main__input">
+        <label class="text_input">Descripción</label>
+        <input class="input" required autocomplete="off" />
+      </div>
+      <div class="main__input">
+        <label class="text_input">Valor</label>
+        <input class="input" required autocomplete="off" />
+      </div>
+      <div class="main__input">
+        <label class="text_input">Fecha inicio</label>
+        <input class="input" required autocomplete="off" />
+      </div>
+       <div class="main__input">
+        <label class="text_input">Fecha Fin</label>
+        <input class="input" required autocomplete="off" />
+      </div>
+
+      <div class="buttons">
+        <button class="btn" type="submit">Pagar</button>
+      </div>
+    </form>
+  </ion-infinite-scroll>
 </ion-content>
