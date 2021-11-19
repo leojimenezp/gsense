@@ -48,6 +48,14 @@ const routes: Routes = [
     path: 'schedule',
     loadChildren: () => import('./feature/schedule/schedule.module').then( m => m.SchedulePageModule)
   },
+  {
+    path: 'food',
+    loadChildren: () => import('./feature/food/food.module').then( m => m.FoodPageModule)
+  },
+  {
+    path: 'asesora',
+    loadChildren: () => import('./feature/asesora/asesora.module').then( m => m.AsesoraPageModule)
+  },
  
 ];
 
