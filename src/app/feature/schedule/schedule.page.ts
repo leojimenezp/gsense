@@ -14,7 +14,7 @@ import Swal from 'sweetalert2';
 export class SchedulePage implements OnInit {
 
   public shedule: SheduleModel = {};
-  public listDoctors: any;
+  public listSpecialtys: any;
   public listCalendarDoctor: any;
   public isLoading: Subject<boolean> = this.loader.isLoading;
 
@@ -25,19 +25,19 @@ export class SchedulePage implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.getDoctors();
+    this.getSpecialtys();
   }
 
-  public getDoctors() {
-    this.doctorService.getDoctors().subscribe(doctors => {
-      this.listDoctors = doctors;
+  public getSpecialtys() {
+    this.doctorService.getSpecialty().subscribe(specialty => {
+      this.listSpecialtys = specialty;
     });
   }
 
-  public getCalendarDoctor(id: number) {
+  public getCalendarDoctor(specialty: string) {
     this.listCalendarDoctor = null;
-    this.doctorService.getCalendarDoctorById(id).subscribe(response => {
-      this.listCalendarDoctor = Array.of(response);
+    this.doctorService.getCalendarDoctorBySpecialty(specialty).subscribe(response => {
+      this.listCalendarDoctor = response;
     })
   }
 

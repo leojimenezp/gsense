@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Router } from '@angular/router';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { GooglePlus } from '@ionic-native/google-plus/ngx';
 import firebase from '@firebase/app-compat';
@@ -10,6 +11,7 @@ export class AuthService {
   constructor(
     private AFauth: AngularFireAuth,
     private google: GooglePlus,
+    private router: Router
   ) { }
 
   public authenticateWithGoogle() {
