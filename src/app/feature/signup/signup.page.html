@@ -14,49 +14,25 @@
 		<p>gSense</p>
 	</div>
 	<h3>Crea tu cuenta</h3>
-	<ion-label class="text_registro"
-		>Ingresa tus datos para que puedas disfrutar de todos los beneficios que
+	<ion-label class="text_registro">Ingresa tus datos para que puedas disfrutar de todos los beneficios que
 		traemos para ti.
 	</ion-label>
 	<form id="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
 		<div class="main__input">
 			<label class="text_input">Nombre y Apellido</label>
-			<input
-				class="input"
-				type="text"
-				name="nombre"
-				[(ngModel)]="user.nombre"
-				#nombre="ngModel"
-				[ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }"
-				required
-				autocomplete="off"
-			/>
+			<input class="input" type="text" name="nombre" [(ngModel)]="user.nombre" #nombre="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }" required autocomplete="off" />
 		</div>
 		<div class="main__input">
 			<label class="text_input">Correo Electrónico</label>
-			<input
-				class="input"
-				type="email"
-				name="correo"
-				[(ngModel)]="user.correo"
-				#correo="ngModel"
-				[ngClass]="{ 'is-invalid': f.submitted && correo.invalid }"
-				required
-				autocomplete="off"
-			/>
+			<input class="input" type="email" name="correo" [(ngModel)]="user.correo" #correo="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && correo.invalid }" required mask="A*@A*.S*"
+				 autocomplete="off" />
 		</div>
 		<div class="main__input">
 			<label class="text_input">Télefono</label>
-			<input
-				class="input"
-				type="text"
-				name="telefono"
-				[(ngModel)]="user.telefono"
-				#telefono="ngModel"
-				[ngClass]="{ 'is-invalid': f.submitted && telefono.invalid }"
-				required
-				autocomplete="off"
-			/>
+			<input class="input" type="text" name="telefono" [(ngModel)]="user.telefono" #telefono="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && telefono.invalid }" required autocomplete="off" />
 		</div>
 		<div class="buttons">
 			<button class="btn" type="submit">Registrarme</button>

@@ -53,13 +53,11 @@
 			<h3>Reservar una cita</h3>
 		</div>
 
-		<div class="main_cita">
-			<div class="citas" routerLink="/schedule">
-				<div class="cita__item">
-					<div class="text__item">
-						<p id="par">Conectar con dialogo</p>
-						<p>Cuatro visitas disponibles</p>
-					</div>
+		<div class="main_cita" *ngFor="let specialty of listSpecialtys">
+			<div class="main__bg" [routerLink]="['/schedule']" [queryParams]="{ specialty: specialty}">
+				<div class="bg__gray">
+					<div class="bg__text_espe">{{ specialty }}</div>
+					<div class="bg__text">Cuatro visitas disponibles</div>
 					<div class="image">
 						<img src="assets/dbtes.jpg" />
 					</div>

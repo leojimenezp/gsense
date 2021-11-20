@@ -2,18 +2,11 @@
 	<ion-infinite-scroll>
 		<section class="main">
 			<h1 class="title">Comidas</h1>
-			<article class="uno">
+			<article class="uno" *ngFor="let typeFood of listTypeFoods" routerLink="/food/{{typeFood.id}}">
 				<div class="images">
 					<img class="img" src="assets/d2@4x.png" />
-					<div class="text-food">Desayuno</div>
-					<div class="text-cal">150 calorias</div>
-				</div>
-			</article>
-			<article class="dos">
-				<div class="images">
-					<img class="img" src="assets/d1@4x.png" />
-					<div class="text-food">Almuerzo</div>
-					<div class="text-cal">340 calorias</div>
+					<div class="text-food">{{ typeFood.tipo }}</div>
+					<div class="text-cal">{{ typeFood.calorias }} calorias</div>
 				</div>
 			</article>
 		</section>

@@ -49,15 +49,16 @@ const routes: Routes = [
     loadChildren: () => import('./feature/schedule/schedule.module').then(m => m.SchedulePageModule)
   },
   {
-    path: 'food',
+    path: 'food/:id',
     loadChildren: () => import('./feature/food/food.module').then(m => m.FoodPageModule)
   },
   {
     path: 'asesora',
     loadChildren: () => import('./feature/asesora/asesora.module').then(m => m.AsesoraPageModule)
-  },  {
+  },
+  {
     path: 'foods',
-    loadChildren: () => import('./foods/foods.module').then( m => m.FoodsPageModule)
+    loadChildren: () => import('./feature/foods/foods.module').then( m => m.FoodsPageModule)
   },
 
 

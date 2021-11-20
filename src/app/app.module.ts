@@ -15,6 +15,7 @@ import { NgxMaskIonicModule } from 'ngx-mask-ionic';
 import { LoginPageModule } from '@feature/login/login.module';
 import { MenuComponent } from '@feature/menu/menu.component';
 
+
 @NgModule({
 	declarations: [AppComponent, MenuComponent],
 	entryComponents: [],
