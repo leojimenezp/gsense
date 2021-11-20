@@ -29,15 +29,19 @@ ion-content{
       color: #000;
       font-size: 1.2em;
       font-weight: 500;
-      margin-bottom: 0.5rem;
     }
+
+    // SELECCIÓN DE SESIONES
     .card{
+      margin-top: 1em;
+      margin-bottom: 1em;
+
       width: 100%;
       background: rgb(255, 255, 255);
       border-radius: 1em;
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       border: 2px solid #aaaaaa;
-      padding: 1em;
+      padding: 1.2em;
     }
     .card__title{
       text-align: center;
@@ -58,14 +62,14 @@ ion-content{
 
     }
     .line{
-      width: 30%;
+      width: 40%;
       height: 2px;
       background: rgb(199, 199, 199);
       margin-top: -0.5em;
       margin-bottom: -0.5em;
     }
     .select-session{
-      width: 90%;
+      width: 95%;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -76,7 +80,7 @@ ion-content{
       margin-top: 1em;
     }
      .active{
-      width: 90%;
+      width: 95%;
       margin: auto;
       display: flex;
       flex-direction: column;
@@ -90,25 +94,152 @@ ion-content{
     .p-session{
       color: #000;
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1em;
+      letter-spacing: 0.01rem;
     }
     .active .p-session{
       color: #fff;
       font-weight: bold;
-      font-size: 1.2em;
+      font-size: 1em;
     }
     .active .p2-session{
       color: rgb(207, 207, 207);
-      font-size: .8rem;
-      letter-spacing: 1px;
+      font-size: .7rem;
+      letter-spacing: 0.7px;
       margin-top: 3px;
+      text-align: center;
+      letter-spacing: 0.1em;
+
 
     }
     .p2-session{
       margin-top: 3px;
       color: #000;
-      font-size: .8rem;
+      font-size: .7rem;
       letter-spacing: 1px;
+      text-align: center;
     }
+    
+    // CALENDARIO
+    .date{
+      width: 98%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: -.9rem;
+    }
+    .mes-año{
+      color: #000;
+      font-weight: bold;
+      vertical-align: middle
+    }
+    .arrow-img{
+      margin-top: 0.8em;
+      margin-left: 0.8rem;
+    }
+    .calendario{
+      text-align: center;
+      width: 100%;
+      margin: auto;
+    }
+    .ol{
+    
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      padding: 0px;
+      
+    }
+    .ol li{
+      width: 2.5em;
+      color: #000;
+      text-align: center;
+      font-size: 0.7rem;
+      margin: 0.9rem .1rem;
+    }
+    .ol li:hover{
+      background: rgb(47, 47, 47);
+      color: #fff;
+      border-radius: 20px;
+      cursor: pointer;
+    } 
+    .first{
+      grid-column-start: 1;
+    }
+    .dia{
+      background-color: #fff;
+      font-weight: bold;
+      text-align: center;
+      font-size: 0.5rem;
+    }
+    .btn-date{
+      width: 100%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      margin-top: 1em;
+    }
+    .button{
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+      background: rgb(47, 47, 47);
+      color: #fff;
+      border-radius: 0.7em;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 0.04rem;
+    }
+
+  //  SELECCIONAR LA HORA
+  .buttons{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  .button-time{
+    margin-top: 1em;
+  
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background: #fff;
+    color: #000;
+    border-radius: 0.7em;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.04rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border: 2px solid #aaaaaa;
+  }
+  .active2{
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background: rgb(47, 47, 47);
+    color: #fff;
+    border-radius: 0.7em;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.04rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .button-red{
+    margin-top: 1em;
+    width: 100%;
+    text-align: center;
+    padding: 1em;
+    background: rgb(224, 27, 27);
+    color: #fff;
+    border-radius: 0.7em;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.04rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
   }
 }
