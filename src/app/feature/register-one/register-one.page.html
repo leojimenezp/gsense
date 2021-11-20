@@ -50,14 +50,20 @@
     <div class="fecha">
       <div class="field-inline-block">
         <label>Día</label>
-        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" name="dia" [(ngModel)]="user.dia"
-          #dia="ngModel" [ngClass]="{ 'is-invalid': f.submitted && dia.invalid }" required autocomplete="off" />
+        <select class="date-field" name="dia" [(ngModel)]="user.dia" #dia="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && dia.invalid }" required autocomplete="off">
+          <option value="">Seleccione...</option>>
+          <option *ngFor="let day of listDays" value="{{day}}">{{ day }}</option>
+        </select>
       </div>
 
       <div class="field-inline-block">
         <label>Mes</label>
-        <input type="text" pattern="[0-9]*" maxlength="2" size="2" class="date-field" name="mes" [(ngModel)]="user.mes"
-          #mes="ngModel" [ngClass]="{ 'is-invalid': f.submitted && mes.invalid }" required autocomplete="off" />
+        <select class="date-field" name="mes" [(ngModel)]="user.mes" #mes="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && mes.invalid }" required autocomplete="off">
+          <option value="">Seleccione...</option>>
+          <option *ngFor="let month of listMonths" value="{{month}}">{{ month }}</option>
+        </select>
       </div>
 
       <div class="field-inline-block">
