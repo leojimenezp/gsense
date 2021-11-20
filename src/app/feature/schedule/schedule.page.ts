@@ -43,15 +43,15 @@ export class SchedulePage implements OnInit {
 
   public onSubmit() {
 
-    this.shedule.id_usuario = 13;
-    this.shedule.id_calendario = Number(this.shedule.id_calendario);
+    this.shedule.idUsuario = 13;
+    this.shedule.idCalendario = Number(this.shedule.idCalendario);
 
     this.sheduleService.createShedule(this.shedule).subscribe(response => {
       if (response.id != 0) {
         Swal.fire('Registro exitoso', 'Cita agendada', 'success');
 
-          this.shedule.id_doctor = null,
-          this.shedule.id_calendario = null
+        this.shedule.id_doctor = null,
+          this.shedule.idCalendario = null
       }
     })
   }
