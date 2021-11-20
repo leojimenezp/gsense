@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DoctorService } from '@shared/services/doctor.service';
 import { SheduleService } from '@shared/services/shedule.service';
 import { SheduleModel } from '@shared/interfaces/schedule.interface';
@@ -21,7 +22,8 @@ export class SchedulePage implements OnInit {
   constructor(
     private doctorService: DoctorService,
     private sheduleService: SheduleService,
-    private loader: LoaderService
+    private loader: LoaderService,
+    private activatedRoute: ActivatedRoute
   ) { }
 
   ngOnInit() {
@@ -29,9 +31,21 @@ export class SchedulePage implements OnInit {
   }
 
   public getSpecialtys() {
-    this.doctorService.getSpecialty().subscribe(specialty => {
-      this.listSpecialtys = specialty;
-    });
+
+    const specialty = this.activatedRoute.snapshot.queryParamMap.get('specialty');
+
+    if (specialty != null) {
+      this.doctorService.getSpecialtyBySpecialty(specialty).subscribe(specialty => {
+        this.listSpecialtys = [specialty];
+        console.log(this.listSpecialtys);
+
+      });
+    } else {
+      this.doctorService.getSpecialty().subscribe(specialty => {
+        this.listSpecialtys = specialty;
+      });
+    }
+
   }
 
   public getCalendarDoctor(specialty: string) {
