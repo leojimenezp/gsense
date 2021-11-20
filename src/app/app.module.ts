@@ -11,26 +11,34 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { NgxMaskIonicModule } from 'ngx-mask-ionic'
+import { NgxMaskIonicModule } from 'ngx-mask-ionic';
 import { LoginPageModule } from '@feature/login/login.module';
+import { MenuComponent } from '@feature/menu/menu.component';
+
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [BrowserModule,
-    IonicModule.forRoot(),
-    AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    ReactiveFormsModule,
-    LoginPageModule,
-    NgxMaskIonicModule.forRoot(),
-  ],
-  providers: [
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    { provide: HTTP_INTERCEPTORS, useClass: LoaderInterceptor, multi: true },
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true }],
-  bootstrap: [AppComponent],
+	declarations: [AppComponent, MenuComponent],
+	entryComponents: [],
+	exports: [MenuComponent],
+	imports: [
+		BrowserModule,
+		IonicModule.forRoot(),
+		AppRoutingModule,
+		FormsModule,
+		HttpClientModule,
+		ReactiveFormsModule,
+		LoginPageModule,
+		NgxMaskIonicModule.forRoot(),
+	],
 
+	providers: [
+		{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
+		{
+			provide: HTTP_INTERCEPTORS,
+			useClass: LoaderInterceptor,
+			multi: true,
+		},
+		{ provide: HTTP_INTERCEPTORS, useClass: TokenInterceptor, multi: true },
+	],
+	bootstrap: [AppComponent],
 })
-
-export class AppModule { }
+export class AppModule {}

@@ -25,5 +25,6 @@ export class LoginPage implements OnInit {
        alert('Error ' + err);
      })
    }*/
-
   }
+
+}

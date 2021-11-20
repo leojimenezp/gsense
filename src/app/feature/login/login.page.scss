@@ -4,11 +4,6 @@
   box-sizing: border-box;
 }
 
-ion-toolbar {
-  --background: #000000;
-  text-transform: initial;
-}
-
 ion-content {
   --background: #fbfbfb;
 
@@ -43,20 +38,23 @@ ion-content {
     text-align: center;
     font-weight: 400;
   }
-
+  .main-btn{
+    width: 80%;
+    margin: auto;
+  }
   .btn__login {
     display: flex;
-    justify-content: space-around;
-    flex-flow: column wrap;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
     margin-top: 20px;
   }
 
-  .btn__google {
+  .btn__bt {
     text-transform: capitalize;
-    width: 80%;
+    width: 66px;
+    height: 66px;
     margin: auto;
     margin-top: 20px;
-    width: 80%;
     padding: 12px 20px;
     border-radius: 12px; 
     font-weight: bold;
@@ -67,8 +65,12 @@ ion-content {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #000000, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
   }
-
+  .btn__bt img{
+    width: 1.8rem;
+    
+  }
   .btn__micro {
     text-transform: capitalize;
     width: 80%;
@@ -85,11 +87,6 @@ ion-content {
     /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #000000, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  }
-
-  .x1,
-  .x2 {
-    color: rgb(255, 255, 255);
   }
 
   .or {
@@ -172,7 +169,7 @@ ion-content {
       width: 45%;
     }
 
-    .btn__google {
+    .btn__bt {
       width: 55%;
     }
 
@@ -194,7 +191,7 @@ ion-content {
       width: 45%;
     }
 
-    .btn__google {
+    .btn__bt {
       width: 45%;
     }
 
@@ -227,7 +224,7 @@ ion-content {
       color: #757575;
     }
 
-    .btn__google {
+    .btn__bt {
       width: 35%;
     }
 
@@ -270,7 +267,7 @@ ion-content {
     font-size: 14px;
   }
 
-  .btn__google {
+  .btn__bt {
     width: 25%;
   }
 

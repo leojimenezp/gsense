@@ -1,38 +1,49 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start"> </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/signup">Sign up</ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/home">home</ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/schedule">citas</ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/reg-device">devi</ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/transbank">tras</ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/asesora">Aseso</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start"></ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button routerLink="/signup">Sign up</ion-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button routerLink="/home">home</ion-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button routerLink="/schedule">citas</ion-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button routerLink="/reg-device">devi</ion-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button routerLink="/transbank">tras</ion-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button routerLink="/asesora">Aseso</ion-button>
+		</ion-buttons>
+		<ion-buttons slot="end">
+			<ion-button><i class="fas fa-bars"></i></ion-button>
+		</ion-buttons>
+	</ion-toolbar>
+</ion-header> 
 
 <ion-content>
-  <div id="logo">
-    <!--img id="img" src="assets/logonutrix.jpeg" /-->
-    <p>gSense</p>
-  </div>
+	<div id="logo">
+		<!--img id="img" src="assets/logonutrix.jpeg" /-->
+		<p>gSense</p>
+	</div>
 
-  <span id="text">Sing in</span>
-  <div class="btn__login">
-    <button class="btn__google" (click)="loginGoogle()">
-      <i class="fab fa-google-plus-g x1"></i>
-    </button>
-    <button class="btn__micro"><i class="fab fa-windows x2"> </i></button>
-  </div>
+	<span id="text">Sing in</span>
+
+	<div class="main-btn">
+		<div class="btn__login">
+			<button class="btn__bt">
+				<img src="assets/buscar.png" (click)="loginGoogle()" />
+			</button>
+			<button class="btn__bt" (click)="loginGoogle()">
+				<img src="assets/ventanas.png" />
+			</button>
+			<button class="btn__bt">
+				<img src="assets/manzana.png" (click)="loginGoogle()"/>
+			</button>
+		</div>
+	</div>
 </ion-content>
