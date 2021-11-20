@@ -1,43 +1,68 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-button color="primary">
-        <ion-icon slot="icon-only" name="arrow-back"> </ion-icon>
-      </ion-button>
-    </ion-buttons>
-    <ion-buttons slot="end">
-      <ion-button routerLink="/login">Login</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-button color="primary">
+				<ion-icon slot="icon-only" name="arrow-back"> </ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <div class="logo">
-    <!--img class="image" src="assets/logonutrix.jpeg" /-->
-     <p>gSense</p>
-  </div>
-  <h3>Crea tu cuenta</h3>
-  <ion-label class="text_registro">Ingresa tus datos para que puedas disfrutar de todos los beneficios que traemos para
-    ti. </ion-label>
-  <form id="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
-    <div class="main__input">
-      <label class="text_input">Nombre y Apellido</label>
-      <input class="input" type="text" name="nombre" [(ngModel)]="user.nombre" #nombre="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }" required autocomplete="off" />
-    </div>
-    <div class="main__input">
-      <label class="text_input">Correo Electrónico</label>
-      <input class="input" type="email" name="correo" [(ngModel)]="user.correo" #correo="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && correo.invalid }" required autocomplete="off" />
-    </div>
-    <div class="main__input">
-      <label class="text_input">Télefono</label>
-      <input class="input" type="text" name="telefono" [(ngModel)]="user.telefono" #telefono="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && telefono.invalid }" required autocomplete="off" />
-    </div>
-    <div class="buttons">
-      <button class="btn" type="submit">Registrarme</button>
-      <button class="register" routerLink="/login">¿Ya tienes una cuenta?<span class="click"> Click Aquí</span></button>
-    </div>
-  </form>
+	<div class="logo">
+		<!--img class="image" src="assets/logonutrix.jpeg" /-->
+		<p>gSense</p>
+	</div>
+	<h3>Crea tu cuenta</h3>
+	<ion-label class="text_registro"
+		>Ingresa tus datos para que puedas disfrutar de todos los beneficios que
+		traemos para ti.
+	</ion-label>
+	<form id="form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+		<div class="main__input">
+			<label class="text_input">Nombre y Apellido</label>
+			<input
+				class="input"
+				type="text"
+				name="nombre"
+				[(ngModel)]="user.nombre"
+				#nombre="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && nombre.invalid }"
+				required
+				autocomplete="off"
+			/>
+		</div>
+		<div class="main__input">
+			<label class="text_input">Correo Electrónico</label>
+			<input
+				class="input"
+				type="email"
+				name="correo"
+				[(ngModel)]="user.correo"
+				#correo="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && correo.invalid }"
+				required
+				autocomplete="off"
+			/>
+		</div>
+		<div class="main__input">
+			<label class="text_input">Télefono</label>
+			<input
+				class="input"
+				type="text"
+				name="telefono"
+				[(ngModel)]="user.telefono"
+				#telefono="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && telefono.invalid }"
+				required
+				autocomplete="off"
+			/>
+		</div>
+		<div class="buttons">
+			<button class="btn" type="submit">Registrarme</button>
+			<button class="register" routerLink="/login">
+				¿Ya tienes una cuenta?<span class="click"> Click Aquí</span>
+			</button>
+		</div>
+	</form>
 </ion-content>
