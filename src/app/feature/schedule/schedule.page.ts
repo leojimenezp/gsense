@@ -50,7 +50,7 @@ export class SchedulePage implements OnInit {
       if (response.id != 0) {
         Swal.fire('Registro exitoso', 'Cita agendada', 'success');
 
-          this.shedule.id_doctor = null,
+        this.shedule.id_doctor = null,
           this.shedule.idCalendario = null
       }
     })
