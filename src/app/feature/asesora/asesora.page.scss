@@ -21,13 +21,44 @@ ion-toolbar {
 ion-content {
   --background: #fbfbfb;
   height: 100%;
-
-  .main_cit {
-    display: flex;
-    width: 90%;
-    margin: 10px auto;
-    justify-content: space-between;
+  .title{
+    text-align: center;
+    color: #000;
+    font-weight: bold;
   }
+  .btn-up{
+    width:  45%;
+    margin: 1em auto;
+    background: rgb(233, 231, 231);
+    color: #000;
+    font-weight: bold;
+    border-radius: 0.5em;
+    padding: 0.1em;
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #ffffff;
+
+  }
+  .chat{
+    width:  49%;
+    text-align: center;
+    display: block;
+    border-radius: 0.5em;
+    font-size: 0.8rem;
+    padding: 0.3em;
+
+  }
+  .btn-active{
+    width:  50%;
+    text-align: center;
+    display: block;
+    background: #fff;
+    border-radius: 0.5em;
+    font-size: 0.8rem;
+    padding: 0.3em;
+
+  }
+ 
 
   .main {
     display: flex;
@@ -35,8 +66,7 @@ ion-content {
     margin: 15px auto;
     justify-content: space-between;
   }
-
-  .main .text {
+  .text {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,28 +78,20 @@ ion-content {
     font-size: 20px;
   }
 
-  .main .image {
+  .main_cita {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 57px;
-    height: 57px;
-    border: 1px solid #c3c4c4;
-    border-radius: 50%;
-    flex-flow: row wrap;
-  }
-  .main_cita .image {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 300px;
-  }
+    width: 100%;
+    justify-content: space-between;
 
+  }
+ 
+
+
+  
   h3 {
     width: 90%;
     margin: 8px auto;
-    color: #757575;
+    color: #000;
     font-weight: bold;
     font-size: 15px;
   }
@@ -120,6 +142,40 @@ ion-content {
   .main__bg {
     width: 100%;
     margin: auto;
+
+  }
+  .citas{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    border-radius: 1em;
+    border: 0.1rem solid #c4c4c4;
+  }
+  .text__item{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+ 
+  .text__item p{
+    font-size: 0.8rem;
+    color: #000;
+    padding: 0.2em;
+
+  }
+  #par{
+    font-size: 1em;
+    width: 60%;
+    margin-bottom: 1em;
+  }
+  .image {
+    width: 50%;
+  }
+  .image img{
+    border-radius: 0.5em;
   }
   .main__bg_espe {
     width: 100%;
@@ -131,10 +187,11 @@ ion-content {
 
   .bg__gray {
     width: 90%;
-    height: 126px;
+    margin: auto;
+    padding: 2em 0;
     filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
     border-radius: 20px;
-    background: #ffffff;
+    background: #fff;
     margin: 15px auto;
     display: flex;
     flex-flow: column wrap;
@@ -142,10 +199,24 @@ ion-content {
     align-items: center;
     font-size: 13px;
   }
+  .cita__item{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 1em;
+    margin-bottom: -0.27rem;
+  }
+  .text-cita{
+    text-align: center;
+    color: #000;
+    margin-top: 1em;
 
+  }
   .bg__text {
-    margin: 5px 0px;
-    color: #a0a0a0;
+    width: 80%;
+    text-align: justify;
+    margin-top: 1em;
+    color: #000;
   }
   .bg__text_espe {
     margin: 5px 0px;
@@ -154,16 +225,16 @@ ion-content {
 
   .btn {
     
-    margin-top: 20px;
-    width: 90%;
-    padding: 18px 20px;
+    margin-top: 1em !important;
+    width: 100%;
+    margin: auto;
+    padding: 1em;
     background: #222222;
-    border-radius: 10px;
+    border-radius: 0.8em;
     font-weight: bold;
     letter-spacing: 1px;
-    color: white;
+    color: #fff;
   }
-
   .upper {
     font-size: 25px;
     font-weight: bold;
