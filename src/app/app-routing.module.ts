@@ -55,7 +55,11 @@ const routes: Routes = [
   {
     path: 'asesora',
     loadChildren: () => import('./feature/asesora/asesora.module').then(m => m.AsesoraPageModule)
+  },  {
+    path: 'foods',
+    loadChildren: () => import('./foods/foods.module').then( m => m.FoodsPageModule)
   },
+
 
 ];
 

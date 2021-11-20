@@ -1,0 +1,119 @@
+<ion-content>
+	<ion-infinite-scroll>
+		<section class="main">
+			<h1 class="title">Comidas</h1>
+			<article class="uno">
+				<div class="images">
+					<img class="img" src="assets/d2@4x.png" />
+					<div class="text-food">Desayuno</div>
+					<div class="text-cal">150 calorias</div>
+				</div>
+			</article>
+			<article class="dos">
+				<div class="images">
+					<img class="img" src="assets/d1@4x.png" />
+					<div class="text-food">Almuerzo</div>
+					<div class="text-cal">340 calorias</div>
+				</div>
+			</article>
+		</section>
+		<div class="flex">
+			<div class="menu">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-home"
+					color="#000"
+					routerLink="/home"
+				>
+					<path
+						d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+					></path>
+					<polyline points="9 22 9 12 15 12 15 22"></polyline>
+				</svg>
+				<label for="img">Inicio</label>
+			</div>
+			<div class="menu">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-message-square"
+					color="#000"
+					routerLink="/schedule"
+				>
+					<path
+						d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+					></path>
+				</svg>
+				<label for="img">Asesoramiento</label>
+			</div>
+			<div class="menu">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-monitor"
+					color="#000"
+					routerLink="/asesora"
+				>
+					<rect
+						x="2"
+						y="3"
+						width="20"
+						height="14"
+						rx="2"
+						ry="2"
+					></rect>
+					<line x1="8" y1="21" x2="16" y2="21"></line>
+					<line x1="12" y1="17" x2="12" y2="21"></line>
+				</svg>
+				<label routerLink="/asesora" for="img">Cita</label>
+			</div>
+
+			<div class="menu">
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="feather feather-bar-chart-2"
+					color="#000"
+					routerLink="/food"
+					id="img"
+				>
+					<line x1="18" y1="20" x2="18" y2="10"></line>
+					<line x1="12" y1="20" x2="12" y2="4"></line>
+					<line x1="6" y1="20" x2="6" y2="14"></line>
+				</svg>
+				<label routerLink="/food" for="img">Metrics</label>
+			</div>
+		</div>
+	</ion-infinite-scroll>
+	<!-- <img class="img" src="assets/d1@4x.png" />
+  <img class="img" src="assets/d3@4x.png" /> -->
+</ion-content>
