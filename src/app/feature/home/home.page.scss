@@ -86,7 +86,7 @@ ion-content {
   }
 
   .space {
-    margin-bottom: 2em;
+    margin-bottom: 5em;
   }
 
   .connect__green .settings {
@@ -254,4 +254,29 @@ ion-content {
     padding-top: 20px;
   }
 
+  // MENU
+ 
+  .flex{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #f6f6f6;
+  }
+  .menu{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu label{
+    margin-top: .3rem;
+    color: #000;
+  }
+
+  .menu svg:hover, .menu label:hover{
+    color: red;
+  }
 }

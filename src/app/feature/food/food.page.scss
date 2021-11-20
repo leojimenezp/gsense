@@ -1,5 +1,6 @@
 ion-content{
-    --background: #d8d8d8;
+    --background: #fbfbfb;
+
 
     .main{
         width: 92%;
@@ -62,11 +63,11 @@ ion-content{
         
     }
     .form-item input[type=text]{
-        border: none !important;
         background: #fff;
         padding: 0.5em;
         margin-top: 0.6em;
         border-radius: 0.5em;
+        border: 1px solid #b8b8b8;
     }
     ::placeholder{
         background: #fff;
@@ -87,6 +88,31 @@ ion-content{
     }
 
 
+  // MENU
+ 
+  .flex{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #f6f6f6;
+  }
+  .menu{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu label{
+    margin-top: .3rem;
+    color: #000;
+  }
+
+  .menu svg:hover, .menu label:hover{
+    color: red;
+  }
     // .images{
     //     display: flex;
     //     flex-flow: column wrap;

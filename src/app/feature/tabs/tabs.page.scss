@@ -1,3 +1,15 @@
 ion-content{
-    --background: #b8b8b8;
+    --background: #fff;
+  ion-tab-bar{
+    .nav__text{
+        color: #000;
+    }
+   
+    svg:hover, .nav__text:hover{
+        color: red;
+    }
+   
+  }
+
+
 }
