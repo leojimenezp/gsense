@@ -5,13 +5,15 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { SignupPageRoutingModule } from './signup-routing.module';
 import { SignupPage } from './signup.page';
+import { NgxMaskIonicModule } from 'ngx-mask-ionic'
 
 @NgModule({
 	imports: [
 		CommonModule,
 		FormsModule,
 		IonicModule,
-		SignupPageRoutingModule
+		SignupPageRoutingModule,
+		NgxMaskIonicModule
 	],
 	declarations: [SignupPage],
 })
