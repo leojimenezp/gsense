@@ -23,7 +23,7 @@
 			<ion-button><i class="fas fa-bars"></i></ion-button>
 		</ion-buttons>
 	</ion-toolbar>
-</ion-header>  -->
+</ion-header> -->
 
 <ion-content>
 	<div id="logo">
@@ -31,7 +31,7 @@
 		<p>gSense</p>
 	</div>
 
-	<span id="text">Inicia sesión</span>
+	<span id="text">Sing in</span>
 
 	<div class="main-btn">
 		<div class="btn__login">
@@ -42,11 +42,8 @@
 				<img src="assets/ventanas.png" />
 			</button>
 			<button class="btn__bt">
-				<img src="assets/manzana.png" routerLink="/tabs" />
+				<img src="assets/manzana.png" (click)="loginGoogle()"/>
 			</button>
 		</div>
 	</div>
 </ion-content>
-
-<!-- 					(click)="loginGoogle()"
- -->
