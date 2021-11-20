@@ -18,13 +18,13 @@ export class LoginPage implements OnInit {
   }
 
   public loginGoogle() {
-    this.router.navigate(['/home']);
-    /* this.authService.authenticateWithGoogle().then(() => {
-       alert('Usuario autenticado')
-     }).catch(err => {
-       alert('Error ' + err);
-     })
-   }*/
+    // this.router.navigate(['/home']);
+    this.authService.authenticateWithGoogle().then(() => {
+      alert('Usuario autenticado')
+    }).catch(err => {
+      alert('Error ' + err);
+    })
   }
-
 }
+
+

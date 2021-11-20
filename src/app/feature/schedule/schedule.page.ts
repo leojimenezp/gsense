@@ -35,10 +35,8 @@ export class SchedulePage implements OnInit {
     const specialty = this.activatedRoute.snapshot.queryParamMap.get('specialty');
 
     if (specialty != null) {
-      this.doctorService.getSpecialtyBySpecialty(specialty).subscribe(specialty => {
-        this.listSpecialtys = [specialty];
-        console.log(this.listSpecialtys);
-
+      this.doctorService.getSpecialty().subscribe(specialty => {
+        this.listSpecialtys = specialty;
       });
     } else {
       this.doctorService.getSpecialty().subscribe(specialty => {

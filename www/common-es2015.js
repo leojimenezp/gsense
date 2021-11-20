@@ -457,6 +457,55 @@ const USER_DATA = "userData";
 
 /***/ }),
 
+/***/ 24399:
+/*!***************************************************!*\
+  !*** ./src/app/shared/services/doctor.service.ts ***!
+  \***************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "DoctorService": function() { return /* binding */ DoctorService; }
+/* harmony export */ });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! tslib */ 61855);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 42741);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ 31887);
+/* harmony import */ var _shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @shared/constants/endPoint */ 53880);
+
+
+
+
+let DoctorService = class DoctorService {
+    constructor(http) {
+        this.http = http;
+    }
+    getDoctors() {
+        return this.http.get(`${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.API}/${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.DOCTOR}`);
+    }
+    getSpecialty() {
+        return this.http.get(`${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.API}/${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.SPECIALTY}`);
+    }
+    getSpecialtyBySpecialty(specialty) {
+        return this.http.get(`${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.API}/${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.SPECIALTY}/` + specialty);
+    }
+    getCalendarDoctorBySpecialty(specialty) {
+        return this.http.get(`${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.API}/${_shared_constants_endPoint__WEBPACK_IMPORTED_MODULE_0__.DOCTOR_CALENDAR}/` + specialty);
+    }
+};
+DoctorService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__.HttpClient }
+];
+DoctorService = (0,tslib__WEBPACK_IMPORTED_MODULE_2__.__decorate)([
+    (0,_angular_core__WEBPACK_IMPORTED_MODULE_3__.Injectable)({
+        providedIn: 'root'
+    })
+], DoctorService);
+
+
+
+/***/ }),
+
 /***/ 21662:
 /*!*********************************************************!*\
   !*** ./src/app/shared/services/localstorage.service.ts ***!

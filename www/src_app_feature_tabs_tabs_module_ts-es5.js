@@ -58,7 +58,46 @@
 
       var routes = [{
         path: '',
-        component: _tabs_page__WEBPACK_IMPORTED_MODULE_0__.TabsPage
+        component: _tabs_page__WEBPACK_IMPORTED_MODULE_0__.TabsPage,
+        children: [{
+          path: 'home',
+          loadChildren: function loadChildren() {
+            return __webpack_require__.e(
+            /*! import() */
+            "src_app_feature_home_home_module_ts").then(__webpack_require__.bind(__webpack_require__,
+            /*! ../home/home.module */
+            96260)).then(function (m) {
+              return m.HomePageModule;
+            });
+          }
+        }, {
+          path: 'asesora',
+          loadChildren: function loadChildren() {
+            return Promise.all(
+            /*! import() */
+            [__webpack_require__.e("common"), __webpack_require__.e("src_app_feature_asesora_asesora_module_ts-src_app_shared_constants_endPoint_ts")]).then(__webpack_require__.bind(__webpack_require__,
+            /*! ../asesora/asesora.module */
+            3183)).then(function (m) {
+              return m.AsesoraPageModule;
+            });
+          }
+        }, {
+          path: 'schedule',
+          loadChildren: function loadChildren() {
+            return Promise.all(
+            /*! import() */
+            [__webpack_require__.e("default-node_modules_sweetalert2_dist_sweetalert2_all_js-src_app_shared_constants_endPoint_ts"), __webpack_require__.e("common"), __webpack_require__.e("src_app_feature_schedule_schedule_module_ts")]).then(__webpack_require__.bind(__webpack_require__,
+            /*! ../schedule/schedule.module */
+            2233)).then(function (m) {
+              return m.SchedulePageModule;
+            });
+          }
+        } // {
+        // 	path: '',
+        // 	redirectTo: '/app/tabs/home',
+        // 	pathMatch: 'full',
+        // },
+        ]
       }];
 
       var _TabsPageRoutingModule = function TabsPageRoutingModule() {
@@ -240,7 +279,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJ0YWJzLnBhZ2Uuc2NzcyJ9 */";
+      __webpack_exports__["default"] = "ion-content {\n  --background: #b8b8b8;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRhYnMucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0kscUJBQWE7QUFDakIiLCJmaWxlIjoidGFicy5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJpb24tY29udGVudHtcclxuICAgIC0tYmFja2dyb3VuZDogI2I4YjhiODtcclxufSJdfQ== */";
       /***/
     },
 
@@ -258,7 +297,7 @@
       /* harmony default export */
 
 
-      __webpack_exports__["default"] = "<ion-tabs>\r\n    <ion-tab-bar slot=\"bottom\" color=\"warning\">\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/2.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Home</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/1.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Services</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/3.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Appointment</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/bars.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Metrics</ion-label>\r\n      </ion-tab-button>\r\n    </ion-tab-bar>\r\n  </ion-tabs>";
+      __webpack_exports__["default"] = "<!-- <ion-tabs>\r\n    <ion-tab-bar slot=\"bottom\" color=\"warning\">\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/2.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Home</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/1.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Services</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/3.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Appointment</ion-label>\r\n      </ion-tab-button>\r\n\r\n      <ion-tab-button>\r\n        <div id=\"logo\">\r\n          <img id=\"img\" src=\"assets/bars.png\" />\r\n        </div>\r\n        <ion-label class=\"nav__text\">Metrics</ion-label>\r\n      </ion-tab-button>\r\n    </ion-tab-bar>\r\n  </ion-tabs> -->\r\n<ion-content>\r\n\t<ion-tabs contentId=\"principal\">\r\n\t\t<ion-tab-bar slot=\"bottom\" color=\"light\">\r\n\t\t\t<ion-tab-button tab=\"home\">\r\n\t\t\t\t<img id=\"img\" src=\"assets/2.png\" />\r\n\t\t\t\t<ion-label class=\"nav__text\">Inicio</ion-label>\r\n\t\t\t</ion-tab-button>\r\n\r\n\t\t\t<ion-tab-button tab=\"asesora\">\r\n\t\t\t\t<img id=\"img\" src=\"assets/1.png\" />\r\n\t\t\t\t<ion-label class=\"nav__text\">Asesoramiento</ion-label>\r\n\t\t\t</ion-tab-button>\r\n\r\n\t\t\t<ion-tab-button tab=\"schedule\">\r\n\t\t\t\t<img id=\"img\" src=\"assets/3.png\" />\r\n\t\t\t\t<ion-label class=\"nav__text\">Cita</ion-label>\r\n\t\t\t</ion-tab-button>\r\n\r\n\t\t\t<ion-tab-button tab=\"home\">\r\n\t\t\t\t<img id=\"img\" src=\"assets/bars.png\" />\r\n\t\t\t\t<ion-label class=\"nav__text\">Metrics</ion-label>\r\n\t\t\t</ion-tab-button>\r\n\t\t</ion-tab-bar>\r\n\t</ion-tabs>\r\n</ion-content>\r\n";
       /***/
     }
   }]);

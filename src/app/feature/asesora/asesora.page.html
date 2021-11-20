@@ -1,74 +1,60 @@
 <ion-header>
-  <!--ion-toolbar>
+	<!--ion-toolbar>
     <ion-title><i class="fas fa-bars bars"></i></ion-title>
   </ion-toolbar-->
 </ion-header>
 
 <ion-content>
-  <ion-infinite-scroll>
-    <div class="title-x">
-      <h1 class="text-x">Nueva cita</h1>
-      
-    </div>
-    <h1>Asesoramiento</h1>
-    <div class="main">
-      <div class="main__bg" routerLink="/schedule">
-        <div class="bg__gray">
-          <i class="fab fa-arrow-up x1"></i>
-          <div class="bg__text">Nueva cita</div>
-        </div>
-      </div>
-      <div class="main__bg">
-        <div class="bg__gray">
-          <div class="bg__text">Cita actual</div>
-        </div>
-      </div>
-      <div class="main__bg">
-        <div class="bg__gray">
-          <div class="bg__text">Historial</div>
-        </div>
-      </div>
-    </div>
+	<ion-infinite-scroll>
+		<h1>Asesoramiento</h1>
+		<div class="main">
+			<div class="main__bg" routerLink="/schedule">
+				<div class="bg__gray">
+					<i class="fab fa-arrow-up x1"></i>
+					<div class="bg__text">Nueva cita</div>
+				</div>
+			</div>
+			<div class="main__bg">
+				<div class="bg__gray">
+					<div class="bg__text">Cita actual</div>
+				</div>
+			</div>
+			<div class="main__bg">
+				<div class="bg__gray">
+					<div class="bg__text">Historial</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="main__bg_espe">
-      <div class="bg__gray">
-        <div class="bg__text">
-          Tu plan renuévate incluye el número de pruebas que puedes realizar
-          visitando uno de nuestros laboratorios. Obtiene consultas de nuestros
-          médicos para pruebas de laboratorio específicas.
-          <div class="buttons">
-            <button class="btn" type="submit">
-              Haz una prueba de laboratorio
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="info">
-      <h3>Reservar una cita</h3>
-    </div>
+		<div class="main__bg_espe">
+			<div class="bg__gray">
+				<div class="bg__text">
+					Tu plan renuévate incluye el número de pruebas que puedes
+					realizar visitando uno de nuestros laboratorios. Obtiene
+					consultas de nuestros médicos para pruebas de laboratorio
+					específicas.
+					<div class="buttons">
+						<button class="btn" type="submit">
+							Haz una prueba de laboratorio
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="info">
+			<h3>Reservar una cita</h3>
+		</div>
 
-    <div class="main_cita">
-      <div class="main__bg" routerLink="/schedule">
-        <div class="bg__gray">
-          <div class="bg__text_espe">Conectar con Diabético</div>
-          <div class="bg__text">Cuatro visitas disponibles</div>
-          <div class="image">
-            <img src="assets/dbtes.jpg" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="main_cita">
-      <div class="main__bg" routerLink="/schedule">
-        <div class="bg__gray">
-          <div class="bg__text_espe">Conectar con Nutricionista</div>
-          <div class="bg__text">Ocho visitas disponibles</div>
-          <div class="image">
-            <img src="assets/img-nutricion.jpg" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </ion-infinite-scroll>
+		<div class="main_cita" *ngFor="let specialty of listSpecialtys">
+			<div class="main__bg" [routerLink]="['/schedule']" [queryParams]="{ specialty: specialty}">
+				<div class="bg__gray">
+					<div class="bg__text_espe">{{ specialty }}</div>
+					<div class="bg__text">Cuatro visitas disponibles</div>
+					<div class="image">
+						<img src="assets/dbtes.jpg" />
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-infinite-scroll>
 </ion-content>
