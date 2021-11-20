@@ -4,7 +4,7 @@ const DOCTOR = "doctor";
 const SHEDULE = "cita";
 const DEVICE = "equipo";
 const SERVICES = "servicios";
-const USER_SERVICE = "usuarioservicioservicio";
+const USER_SERVICE = "usuarioservicio";
 const DOCTOR_CALENDAR = "calendariodoctor";
 const SPECIALTY = "especialidad";
 
