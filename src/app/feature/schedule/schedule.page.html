@@ -1,32 +1,37 @@
 <ngx-loading *ngIf="isLoading | async" [show]="true"> </ngx-loading>
 <ion-header>
-  <!-- <ion-toolbar>
+	<!-- <ion-toolbar>
 		<ion-title><i class="fas fa-bars bars"></i></ion-title>
 	</ion-toolbar> -->
 </ion-header>
 
 <ion-content>
-  <ion-infinite-scroll>
-    <div class="main">
-      <div class="title-x">
-        <h1 class="text-x">Nueva cita</h1>
-        <img class="img-x" src="assets/x.svg" />
-      </div>
-      <p class="text">Basado en su plan</p>
-      <div class="card">
-
-        <h3 class="card__title">Seleccione su sesión</h3>
-        <div class="left-session">
-          <p class="left-session-item">Your sessions</p>
-          <span class="line"></span>
-          <!--<p class="left-session-item">Duración: 1hr</p>-->
-        </div>
-        <div class="select-session " *ngFor="let specialty of listSpecialtys" (click)="getCalendarDoctor(specialty)">
-          <span class="p-session">sesión con {{ specialty }}</span>
-          <span class="p2-session">5 sessions remaining with doctor</span>
-        </div>
-      </div>
-      <!--  <div class="card">
+	<ion-infinite-scroll>
+		<div class="main">
+			<div class="title-x">
+				<h1 class="text-x">Nueva cita</h1>
+				<img class="img-x" src="assets/x.svg" />
+			</div>
+			<p class="text">Basado en su plan</p>
+			<div class="card">
+				<h3 class="card__title">Seleccione su sesión</h3>
+				<div class="left-session">
+					<p class="left-session-item">Your sessions</p>
+					<span class="line"></span>
+					<!--<p class="left-session-item">Duración: 1hr</p>-->
+				</div>
+				<div
+					class="select-session"
+					*ngFor="let specialty of listSpecialtys"
+					(click)="getCalendarDoctor(specialty)"
+				>
+					<span class="p-session">sesión con {{ specialty }}</span>
+					<span class="p2-session"
+						>5 sessions remaining with doctor</span
+					>
+				</div>
+			</div>
+			<!--  <div class="card">
         <h3 class="card__title">Selecciona tu fecha</h3>
         <div class="date">
           <p class="mes-año">Nov 2021</p>
@@ -55,32 +60,47 @@
 
         </div>
       </div>-->
-      <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
-        <div class="main__input">
-          <label for="seguro" class="text_input">Selecciona fecha a agendar</label>
-        </div>
-        <div class="main_select">
-          <select name="idCalendario" [(ngModel)]="shedule.idCalendario" #idCalendario="ngModel"
-            [ngClass]="{ 'is-invalid': f.submitted && idCalendario.invalid }" required autocomplete="off">
-            <option value="">Seleccione...</option>
-            <option *ngFor="let calendarDoctor of listCalendarDoctor" value="{{calendarDoctor.id}}">
-              Fecha inical {{ calendarDoctor.fechaIni }} - Fecha final {{ calendarDoctor.fechaFin }}
-            </option>
-          </select>
-        </div>
-        <div class="buttons">
-          <button class="btn" type="submit">Agendar</button>
-        </div>
-      </form>
-      <br />
-    </div>
+			<form
+				id="main_form"
+				(ngSubmit)="f.form.valid && onSubmit()"
+				#f="ngForm"
+			>
+				<div class="main__input">
+					<label for="seguro" class="text_input"
+						>Selecciona fecha a agendar</label
+					>
+				</div>
+				<div class="main_select">
+					<select
+						name="idCalendario"
+						[(ngModel)]="shedule.idCalendario"
+						#idCalendario="ngModel"
+						[ngClass]="{ 'is-invalid': f.submitted && idCalendario.invalid }"
+						required
+						autocomplete="off"
+					>
+						<option value="">Seleccione...</option>
+						<option
+							*ngFor="let calendarDoctor of listCalendarDoctor"
+							value="{{calendarDoctor.id}}"
+						>
+							Fecha inical {{ calendarDoctor.fechaIni }} - Fecha
+							final {{ calendarDoctor.fechaFin }}
+						</option>
+					</select>
+				</div>
+				<div class="buttons">
+					<button class="btn" type="submit">Agendar</button>
+				</div>
+			</form>
+			<br />
+		</div>
 
-
-    <!-- <div class="container">
+		<!-- <div class="container">
 			<h3>Agendar cita</h3>
 		</div> -->
 
-    <!-- <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+		<!-- <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
       <div class="main__input">
         <label for="seguro" class="text_input">Selecciona el médico</label>
       </div>
@@ -109,5 +129,92 @@
       </div>
     </form>
     -->
-  </ion-infinite-scroll>
+	</ion-infinite-scroll>
+	<div class="flex">
+		<div class="menu">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-home"
+				color="#000"
+				routerLink="/home"
+			>
+				<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+				<polyline points="9 22 9 12 15 12 15 22"></polyline>
+			</svg>
+			<label for="img">Inicio</label>
+		</div>
+		<div class="menu">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-message-square"
+				color="#000"
+				routerLink="/schedule"
+			>
+				<path
+					d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"
+				></path>
+			</svg>
+			<label for="img">Asesoramiento</label>
+		</div>
+		<div class="menu">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-monitor"
+				color="#000"
+				routerLink="/asesora"
+			>
+				<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+				<line x1="8" y1="21" x2="16" y2="21"></line>
+				<line x1="12" y1="17" x2="12" y2="21"></line>
+			</svg>
+			<label routerLink="/asesora" for="img">Cita</label>
+		</div>
+
+		<div class="menu">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="24"
+				height="24"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="feather feather-bar-chart-2"
+				color="#000"
+				routerLink="/food"
+				id="img"
+			>
+				<line x1="18" y1="20" x2="18" y2="10"></line>
+				<line x1="12" y1="20" x2="12" y2="4"></line>
+				<line x1="6" y1="20" x2="6" y2="14"></line>
+			</svg>
+			<label routerLink="/food" for="img">Metrics</label>
+		</div>
+	</div>
 </ion-content>

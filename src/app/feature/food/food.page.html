@@ -1,40 +1,35 @@
+<ngx-loading *ngIf="isLoading | async" [show]="true"> </ngx-loading>
 <ion-content>
 	<div class="main">
 		<h1 class="title">Comidas</h1>
-		<form class="form-image">
+		<form class="form-image" (ngSubmit)="f.form.valid && onSubmitFile()" #f="ngForm">
 			<h2>Cargar por imagen</h2>
 			<label for="avatar">Selecciona tu comida</label>
-
-			<input
-				type="file"
-				id="avatar"
-				name="avatar"
-				accept="image/png, image/jpeg"
-			/>
-			<button class="btn">Agregar</button>
+			<input type="file" name="foto" [(ngModel)]="food.foto" #fileInput #foto="ngModel"
+				[ngClass]="{ 'is-invalid': f.submitted && foto.invalid }" required (change)="getFile(fileInput.files)"
+				accept="image/png, image/jpeg" />
+			<button class="btn" type="submit">Agregar</button>
 		</form>
-		<form action="" class="form">
+		<form class="form" (ngSubmit)="s.form.valid && onSubmit()" #s="ngForm">
 			<h2>Cargar datos por comida caloricos</h2>
 
 			<div class="form-item">
-				<label for="comida">Ingresa tu comida</label>
-				<input
-					type="text"
-					id="comida"
-					name="comida"
-					placeholder="Comida"
-				/>
+				<label for="comida">Seleccione tu comida</label>
+				<select class="main_select" name="idComida" [(ngModel)]="food.idComida" #idComida="ngModel"
+					[ngClass]="{ 'is-invalid': s.submitted && idComida.invalid }" required>
+					<option value="">Seleccione...</option>
+					<option *ngFor="let food of listFoods" value="{{food.id}}">
+						{{ food.nombre }}
+					</option>
+
+				</select>
 			</div>
 			<div class="form-item">
 				<label for="calorias">Ingresar calorias</label>
-				<input
-					type="text"
-					id="calorias"
-					name="calorias"
-					placeholder="Calorias"
-				/>
+				<input type="text" name="cantidad" [(ngModel)]="food.cantidad" #cantidad="ngModel"
+					[ngClass]="{ 'is-invalid': s.submitted && cantidad.invalid }" required placeholder="Calorias" />
 			</div>
-			<button class="btn">Agregar</button>
+			<button class="btn" type="submit">Agregar</button>
 		</form>
 		<!-- <div class="images">
 			<img class="img" src="assets/d2@4x.png" />
@@ -43,5 +38,44 @@
 			<div class="text-img-bold">Desayuno</div>
 			<div class="text-img">150 calorias</div>
 		</div> -->
+	</div>
+	<div class="flex">
+		<div class="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+				class="feather feather-home" color="#000" routerLink="/home">
+				<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+				<polyline points="9 22 9 12 15 12 15 22"></polyline>
+			</svg>
+			<label for="img">Inicio</label>
+		</div>
+		<div class="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+				class="feather feather-message-square" color="#000" routerLink="/schedule">
+				<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+			</svg>
+			<label for="img">Asesoramiento</label>
+		</div>
+		<div class="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+				class="feather feather-monitor" color="#000" routerLink="/asesora">
+				<rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+				<line x1="8" y1="21" x2="16" y2="21"></line>
+				<line x1="12" y1="17" x2="12" y2="21"></line>
+			</svg>
+			<label for="img">Cita</label>
+		</div>
+		<div class="menu">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+				stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+				class="feather feather-bar-chart-2" color="#000" routerLink="/food">
+				<line x1="18" y1="20" x2="18" y2="10"></line>
+				<line x1="12" y1="20" x2="12" y2="4"></line>
+				<line x1="6" y1="20" x2="6" y2="14"></line>
+			</svg>
+			<label for="img">Metrics</label>
+		</div>
 	</div>
 </ion-content>

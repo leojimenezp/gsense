@@ -1,69 +1,15 @@
-<ion-header>
-	<!--ion-toolbar>
-    <ion-title><i class="fas fa-bars bars"></i></ion-title>
-  </ion-toolbar-->
-</ion-header>
-
 <ion-content>
 	<ion-infinite-scroll>
-		<h1 class="title">Asesoramiento</h1>
-		<div class="btn-up">
-			<span class="chat">Chat</span>
-			<span class="btn-active">Servicios</span>
-		</div>
-		<div class="main">
-			<div class="main__bg" routerLink="/schedule">
-				<div class="bg__gray">
-					<img src="assets/arrow-up-right.svg" />
-					<div class="text-cita">Nueva cita</div>
+		<section class="main">
+			<h1 class="title">Comidas</h1>
+			<article class="uno" *ngFor="let typeFood of listTypeFoods" routerLink="/food/{{typeFood.id}}">
+				<div class="images">
+					<img class="img" src="assets/d2@4x.png" />
+					<div class="text-food">{{ typeFood.tipo }}</div>
+					<div class="text-cal">{{ typeFood.calorias }} calorias</div>
 				</div>
-			</div>
-			<div class="main__bg">
-				<div class="bg__gray">
-					<img src="assets/phone-incoming.svg" />
-
-					<div class="text-cita">Cita actual</div>
-				</div>
-			</div>
-			<div class="main__bg">
-				<div class="bg__gray">
-					<img src="assets/archive.svg" />
-
-					<div class="text-cita">Historial</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="main__bg_espe">
-			<div class="bg__gray">
-				<div class="bg__text">
-					Tu plan renuévate incluye el número de pruebas que puedes
-					realizar visitando uno de nuestros laboratorios. Obtiene
-					consultas de nuestros médicos para pruebas de laboratorio
-					específicas.
-					<div class="buttons">
-						<button class="btn" type="submit">
-							Haz una prueba de laboratorio
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="info">
-			<h3>Reservar una cita</h3>
-		</div>
-
-		<div class="main_cita" *ngFor="let specialty of listSpecialtys">
-			<div class="main__bg" [routerLink]="['/schedule']" [queryParams]="{ specialty: specialty}">
-				<div class="bg__gray">
-					<div class="bg__text_espe">{{ specialty }}</div>
-					<div class="bg__text">Cuatro visitas disponibles</div>
-					<div class="image">
-						<img src="assets/dbtes.jpg" />
-					</div>
-				</div>
-			</div>
-		</div>
+			</article>
+		</section>
 		<div class="flex">
 			<div class="menu">
 				<svg
@@ -161,4 +107,6 @@
 			</div>
 		</div>
 	</ion-infinite-scroll>
+	<!-- <img class="img" src="assets/d1@4x.png" />
+  <img class="img" src="assets/d3@4x.png" /> -->
 </ion-content>

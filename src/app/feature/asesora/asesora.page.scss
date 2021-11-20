@@ -50,6 +50,7 @@ ion-content {
     text-align: center;
     color: #000;
     font-weight: bold;
+    margin-top: 1em;
   }
   .btn-up{
     width:  45%;
@@ -107,7 +108,7 @@ ion-content {
     display: flex;
     width: 100%;
     justify-content: space-between;
-
+    margin-bottom: 2em;
   }
  
 
@@ -357,5 +358,32 @@ ion-content {
     display: flex;
     width: 90%;
     flex-direction: row;
+  }
+  
+  // MENU
+ 
+  .flex{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    background-color: #f6f6f6;
+
+  }
+  .menu{
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu label{
+    margin-top: .3rem;
+    color: #000;
+  }
+
+  .menu svg:hover, .menu label:hover{
+    color: red;
   }
 }
