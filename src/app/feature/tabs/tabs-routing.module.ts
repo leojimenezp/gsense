@@ -4,15 +4,40 @@ import { Routes, RouterModule } from '@angular/router';
 import { TabsPage } from './tabs.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: TabsPage,
-    
-  }
+	{
+		path: '',
+		component: TabsPage,
+		children: [
+			{
+				path: 'home',
+				loadChildren: () =>
+					import('../home/home.module').then((m) => m.HomePageModule),
+			},
+			{
+				path: 'asesora',
+				loadChildren: () =>
+					import('../asesora/asesora.module').then(
+						(m) => m.AsesoraPageModule
+					),
+			},
+			{
+				path: 'schedule',
+				loadChildren: () =>
+					import('../schedule/schedule.module').then(
+						(m) => m.SchedulePageModule
+					),
+			},
+			// {
+			// 	path: '',
+			// 	redirectTo: '/app/tabs/home',
+			// 	pathMatch: 'full',
+			// },
+		],
+	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+	imports: [RouterModule.forChild(routes)],
+	exports: [RouterModule],
 })
 export class TabsPageRoutingModule {}
