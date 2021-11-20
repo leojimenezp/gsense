@@ -6,7 +6,7 @@
 }
 
 ion-toolbar {
-  --background: #E73122;
+  --background: #d8d8d8;
   text-transform: initial;
   color: rgb(255, 255, 255);
   height: 100%;
@@ -37,7 +37,7 @@ ion-content {
     width: 45%;
     color: aliceblue;
     letter-spacing: 0.02em;
-    color: #D23022;
+    color: #000000;
     font-weight: bold;
     font-size: 20px;
   }
@@ -67,6 +67,14 @@ ion-content {
     margin: 6px auto;
 
   }
+  .connect__device a {
+    display: flex;
+    width: 88%;
+    margin: 1px auto;
+    color: #000000;
+    font-size: 13px;
+    text-decoration: underline;
+  }
 
   .connect__green span {
     display: inline-block;
@@ -85,7 +93,7 @@ ion-content {
     position: absolute;
     right: 20px;
     top: 162px;
-    color: #E73122;
+    color: #2e2e2e;
     text-decoration: underline;
     font-size: 13px;
   }
@@ -107,7 +115,7 @@ ion-content {
     height: 126px;
     filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
     border-radius: 20px;
-    background: #444444;
+    background: #ffffff;
     margin: 15px auto;
     display: flex;
     flex-flow: column wrap;
@@ -118,17 +126,19 @@ ion-content {
 
   .bg__text {
     margin: 5px 0px;
+    color: #A0A0A0;
   }
 
   .upper {
     font-size: 25px;
     font-weight: bold;
+    color: #000000;
   }
 
   .edit {
     margin-top: 10px;
 
-    color: #E73122;
+    color: #5e5e5e;
     text-decoration: underline;
     font-size: 13px;
   }
@@ -150,7 +160,7 @@ ion-content {
 
   .main_circles .active {
     background:
-      #E73122;
+      #5e5e5e;
   }
 
   .main_circles .line {
@@ -165,7 +175,7 @@ ion-content {
     position: relative;
     width: 100%;
     height: 10%;
-    color: red;
+    color: rgb(0, 0, 0);
   }
 
   .text1 {
@@ -209,7 +219,7 @@ ion-content {
 
   .edit2 {
     margin-top: 10px;
-    color: #E73122;
+    color: #5e5e5e;
     text-decoration: underline;
     font-size: 13px;
   }

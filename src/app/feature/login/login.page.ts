@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from '@shared/services/auth.service';
 
 @Component({
@@ -10,17 +11,19 @@ export class LoginPage implements OnInit {
 
   constructor(
     private authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit() {
   }
 
   public loginGoogle() {
-    this.authService.authenticateWithGoogle().then(() => {
-      alert('Usuario autenticado')
-    }).catch(err => {
-      alert('Error ' + err);
-    })
-  }
+    this.router.navigate(['/signup']);
+    /* this.authService.authenticateWithGoogle().then(() => {
+       alert('Usuario autenticado')
+     }).catch(err => {
+       alert('Error ' + err);
+     })
+   }*/
 
-}
+  }

@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+ion-toolbar {
+  --background: #d8d8d8;
+  text-transform: initial;
+  color: rgb(255, 255, 255);
+  height: 100%;
+
+  .bars {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+}
+
+ion-content {
+  --background: #fbfbfb;
+  height: 100%;
+
+  .main_cit {
+    display: flex;
+    width: 90%;
+    margin: 10px auto;
+    justify-content: space-between;
+  }
+
+  .main {
+    display: flex;
+    width: 90%;
+    margin: 15px auto;
+    justify-content: space-between;
+  }
+
+  .main .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+    color: aliceblue;
+    letter-spacing: 0.02em;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .main .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 57px;
+    height: 57px;
+    border: 1px solid #c3c4c4;
+    border-radius: 50%;
+    flex-flow: row wrap;
+  }
+  .main_cita .image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+  }
+
+  h3 {
+    width: 90%;
+    margin: 8px auto;
+    color: #757575;
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .connect__green {
+    display: flex;
+    width: 88%;
+    margin: 6px auto;
+  }
+  .connect__device a {
+    display: flex;
+    width: 88%;
+    margin: 1px auto;
+    color: #000000;
+    font-size: 13px;
+    text-decoration: underline;
+  }
+
+  .connect__green span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    background: #55be93;
+    border-radius: 50%;
+    margin-top: 4px;
+  }
+
+  .space {
+    margin-bottom: 10px;
+  }
+
+  .connect__green .settings {
+    position: absolute;
+    right: 20px;
+    top: 162px;
+    color: #2e2e2e;
+    text-decoration: underline;
+    font-size: 13px;
+  }
+
+  .connect__green p {
+    color: #a0a0a0;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 5px;
+  }
+
+  .main__bg {
+    width: 100%;
+    margin: auto;
+  }
+  .main__bg_espe {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .bg__gray {
+    width: 90%;
+    height: 126px;
+    filter: drop-shadow(0px 20px 30px rgba(0, 0, 0, 0.15));
+    border-radius: 20px;
+    background: #ffffff;
+    margin: 15px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  .bg__text {
+    margin: 5px 0px;
+    color: #a0a0a0;
+  }
+  .bg__text_espe {
+    margin: 5px 0px;
+    color: #000000;
+  }
+
+  .btn {
+    
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px 20px;
+    background: #222222;
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+  .upper {
+    font-size: 25px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .edit {
+    margin-top: 10px;
+
+    color: #5e5e5e;
+    text-decoration: underline;
+    font-size: 13px;
+  }
+
+  .main_circles {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 15px 50px;
+  }
+
+  .main_circles .circle {
+    width: 11px;
+    height: 11px;
+    background: #d8d8d8;
+    border-radius: 50%;
+  }
+
+  .main_circles .active {
+    background: #5e5e5e;
+  }
+
+  .main_circles .line {
+    border: 1px solid #d8d8d8;
+    width: 1px;
+    height: 50px;
+    margin-left: 4.5px;
+    font-weight: bold;
+  }
+
+  .main__text {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    color: rgb(0, 0, 0);
+  }
+
+  .text1 {
+    position: absolute;
+    width: 272px;
+    height: 32px;
+    left: 80px;
+    top: -148px;
+    color: #757575;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .text2 {
+    position: absolute;
+    width: 272px;
+    height: 32px;
+    left: 80px;
+    top: -96px;
+    color: #757575;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .text3 {
+    position: absolute;
+    width: 272px;
+    height: 32px;
+    left: 80px;
+    top: -40px;
+    color: #757575;
+    background: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .edit2 {
+    margin-top: 10px;
+    color: #5e5e5e;
+    text-decoration: underline;
+    font-size: 13px;
+  }
+
+  .info {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+  }
+}

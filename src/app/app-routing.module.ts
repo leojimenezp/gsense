@@ -38,17 +38,25 @@ const routes: Routes = [
   },
   {
     path: 'reg-device',
-    loadChildren: () => import('./feature/reg-device/reg-device.module').then( m => m.RegDevicePageModule)
+    loadChildren: () => import('./feature/reg-device/reg-device.module').then(m => m.RegDevicePageModule)
   },
   {
     path: 'transbank',
-    loadChildren: () => import('./feature/transbank/transbank.module').then( m => m.TransbankPageModule)
+    loadChildren: () => import('./feature/transbank/transbank.module').then(m => m.TransbankPageModule)
   },
   {
     path: 'schedule',
-    loadChildren: () => import('./feature/schedule/schedule.module').then( m => m.SchedulePageModule)
+    loadChildren: () => import('./feature/schedule/schedule.module').then(m => m.SchedulePageModule)
   },
- 
+  {
+    path: 'food',
+    loadChildren: () => import('./feature/food/food.module').then(m => m.FoodPageModule)
+  },
+  {
+    path: 'asesora',
+    loadChildren: () => import('./feature/asesora/asesora.module').then(m => m.AsesoraPageModule)
+  },
+
 ];
 
 @NgModule({

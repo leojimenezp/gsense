@@ -5,7 +5,7 @@
 }
 
 ion-toolbar {
-  --background: #fbfbfb;
+  --background: #000000;
   text-transform: initial;
 }
 
@@ -17,6 +17,13 @@ ion-content {
     display: flex;
     justify-content: center;
     width: 100%;
+  }
+  p {
+   
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #000000;
   }
 
   #img {
@@ -51,14 +58,14 @@ ion-content {
     margin-top: 20px;
     width: 80%;
     padding: 12px 20px;
-    border-radius: 12px;
+    border-radius: 12px; 
     font-weight: bold;
     letter-spacing: 1px;
-    background: #cb2d3e;
+    background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ef473a, #cb2d3e);
+    background: -webkit-linear-gradient(to right, #000000, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ef473a, #cb2d3e);
+    background: linear-gradient(to right, #000000, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
@@ -72,11 +79,11 @@ ion-content {
     border-radius: 12px;
     font-weight: bold;
     letter-spacing: 1px;
-    background: #e44d26;
+    background: #000000;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f16529, #e44d26);
+    background: -webkit-linear-gradient(to right, #000000, #000000);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f16529, #e44d26);
+    background: linear-gradient(to right, #000000, #000000);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
 
@@ -141,7 +148,7 @@ ion-content {
     margin-top: 20px;
     width: 90%;
     padding: 18px 20px;
-    background: #e73122;
+    background: #000000;
     border-radius: 50px;
     font-weight: bold;
     letter-spacing: 1px;

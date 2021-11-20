@@ -21,7 +21,7 @@ export class SignupPage implements OnInit {
   }
 
   public onSubmit() {
-    this.user.idPerfil = 13;
+    this.user.idPerfil = 2;
     this.storageService.createStorage(USER_DATA, this.user);
     this.router.navigate(['/register-one']);
   }

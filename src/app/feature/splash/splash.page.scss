@@ -32,7 +32,7 @@ ion-toolbar {
 }
 
 ion-content {
-  --background: #fbfbfb;
+  --background: #080808;
 
   #header {
     display: flex;
@@ -47,6 +47,12 @@ ion-content {
       margin-top: 70%;
       width: 150px;
       border: 8px solid #ffffff;
+    }
+    p {
+      margin-top: 70%;
+      font-size: 25px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
     }
 
     #textRegistro {
