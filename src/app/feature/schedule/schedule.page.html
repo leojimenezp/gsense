@@ -1,6 +1,6 @@
 <ngx-loading *ngIf="isLoading | async" [show]="true"> </ngx-loading>
 <ion-header>
-	<!-- <ion-toolbar>
+  <!-- <ion-toolbar>
 		<ion-title><i class="fas fa-bars bars"></i></ion-title>
 	</ion-toolbar> -->
 </ion-header>
@@ -108,7 +108,7 @@
 			<h3>Agendar cita</h3>
 		</div> -->
 
-		<!-- <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
+    <!-- <form id="main_form" (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm">
       <div class="main__input">
         <label for="seguro" class="text_input">Selecciona el médico</label>
       </div>
@@ -124,8 +124,8 @@
         <label for="seguro" class="text_input">Selecciona fecha a agendar</label>
       </div>
       <div class="main_select">
-        <select name="id_calendario" [(ngModel)]="shedule.id_calendario" #id_calendario="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && id_calendario.invalid }" required autocomplete="off">
+        <select name="idCalendario" [(ngModel)]="shedule.idCalendario" #idCalendario="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && idCalendario.invalid }" required autocomplete="off">
           <option value="">Seleccione...</option>
           <option *ngFor="let calendarDoctor of listCalendarDoctor" value="{{calendarDoctor.id}}">
             Fecha inical {{ calendarDoctor.fechaIni }} - Fecha final {{ calendarDoctor.fechaFin }}
@@ -137,5 +137,5 @@
       </div>
     </form>
     -->
-	</ion-infinite-scroll>
+  </ion-infinite-scroll>
 </ion-content>
