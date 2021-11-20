@@ -5,6 +5,7 @@ const SHEDULE = "cita";
 const DEVICE = "equipo";
 const SERVICES = "servicios";
 const USER_SERVICE = "usuarioservicioservicio";
-const DOCTOR_CALENDAR = "calendariomedico";
+const DOCTOR_CALENDAR = "calendariodoctor";
+const SPECIALTY = "especialidad";
 
-export { API, USER, DOCTOR, SHEDULE, DEVICE, SERVICES, USER_SERVICE, DOCTOR_CALENDAR };
+export { API, USER, DOCTOR, SHEDULE, DEVICE, SERVICES, USER_SERVICE, DOCTOR_CALENDAR, SPECIALTY };

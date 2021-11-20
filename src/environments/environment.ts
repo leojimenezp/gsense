@@ -7,12 +7,12 @@ export const environment = {
 };
 
 export const firebaseConfig = {
-  apiKey: "AIzaSyBsrlmW-2jgSrLSRhoWyctjAI6poLBLffM",
-  authDomain: "gsense.firebaseapp.com",
-  projectId: "gsense",
-  storageBucket: "gsense.appspot.com",
-  messagingSenderId: "842296256628",
-  appId: "1:842296256628:web:4907e64609878a3d3b8921"
+  apiKey: "AIzaSyDZYrI4xJAwMTSS9AOqq_F9iPqDOn8dfz8",
+  authDomain: "gsense-8661b.firebaseapp.com",
+  projectId: "gsense-8661b",
+  storageBucket: "gsense-8661b.appspot.com",
+  messagingSenderId: "846165802313",
+  appId: "1:846165802313:web:b36f22acbe1bf085ba2e98"
 };
 
 /*

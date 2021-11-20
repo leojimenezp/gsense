@@ -49,10 +49,11 @@
         <label for="seguro" class="text_input">Selecciona el médico</label>
       </div>
       <div class="main_select">
-        <select  name="id_doctor" [(ngModel)]="shedule.id_doctor" #id_doctor="ngModel"
-        [ngClass]="{ 'is-invalid': f.submitted && id_doctor.invalid }" required autocomplete="off" (change)="getCalendarDoctor($event.target.value)">
+        <select name="id_doctor" [(ngModel)]="shedule.id_doctor" #id_doctor="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && id_doctor.invalid }" required autocomplete="off"
+          (change)="getCalendarDoctor($event.target.value)">
           <option value="">Seleccione...</option>
-          <option *ngFor="let doctor of listDoctors" value="{{doctor.id}}">{{ doctor.nombre }}</option>
+          <option *ngFor="let specialty of listSpecialtys" value="{{specialty}}">{{ specialty }}</option>
         </select>
       </div>
       <div class="main__input">
