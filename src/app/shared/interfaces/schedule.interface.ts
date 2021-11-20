@@ -1,7 +1,7 @@
 export interface SheduleModel {
     id?: number;
-    id_usuario?: number;
-    id_calendario?: number;
+    idUsuario?: number;
+    idCalendario?: number;
     id_doctor?: number;
     Notas?: string;
 }

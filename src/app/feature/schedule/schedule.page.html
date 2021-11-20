@@ -27,8 +27,8 @@
         <label for="seguro" class="text_input">Selecciona fecha a agendar</label>
       </div>
       <div class="main_select">
-        <select name="id_calendario" [(ngModel)]="shedule.id_calendario" #id_calendario="ngModel"
-          [ngClass]="{ 'is-invalid': f.submitted && id_calendario.invalid }" required autocomplete="off">
+        <select name="idCalendario" [(ngModel)]="shedule.idCalendario" #idCalendario="ngModel"
+          [ngClass]="{ 'is-invalid': f.submitted && idCalendario.invalid }" required autocomplete="off">
           <option value="">Seleccione...</option>
           <option *ngFor="let calendarDoctor of listCalendarDoctor" value="{{calendarDoctor.id}}">
             Fecha inical {{ calendarDoctor.fechaIni }} - Fecha final {{ calendarDoctor.fechaFin }}
