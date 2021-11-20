@@ -38,7 +38,7 @@ export class SchedulePage implements OnInit {
       this.doctorService.getSpecialtyBySpecialty(specialty).subscribe(specialty => {
         this.listSpecialtys = [specialty];
         console.log(this.listSpecialtys);
-        
+
       });
     } else {
       this.doctorService.getSpecialty().subscribe(specialty => {
@@ -68,10 +68,6 @@ export class SchedulePage implements OnInit {
           this.shedule.idCalendario = null
       }
     })
-  }
-
-  public onChange($event) {
-    console.log($event);
   }
 
 }
