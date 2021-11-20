@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgxMaskIonicModule } from 'ngx-mask-ionic';
 import { LoginPageModule } from '@feature/login/login.module';
 import { MenuComponent } from '@feature/menu/menu.component';
+import { SchedulePageModule } from '@feature/schedule/schedule.module';
 
 @NgModule({
 	declarations: [AppComponent, MenuComponent],
@@ -27,6 +28,7 @@ import { MenuComponent } from '@feature/menu/menu.component';
 		HttpClientModule,
 		ReactiveFormsModule,
 		LoginPageModule,
+		SchedulePageModule,
 		NgxMaskIonicModule.forRoot(),
 	],
 
