@@ -1,8 +1,12 @@
 <ngx-loading *ngIf="isLoading | async" [show]="true"> </ngx-loading>
 <ion-header>
-  <ion-toolbar>
-    <ion-title><i class="fas fa-bars bars"></i></ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-buttons slot="start" (click)="goBack()">
+			<ion-button color="primary">
+				<ion-icon slot="icon-only" name="arrow-back"> </ion-icon>
+			</ion-button>
+		</ion-buttons>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content>

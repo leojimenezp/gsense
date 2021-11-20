@@ -19,7 +19,12 @@ export class DoctorService {
         return this.http.get<any>(`${API}/${SPECIALTY}`);
     }
 
+    public getSpecialtyBySpecialty(specialty: string) {
+        return this.http.get<any>(`${API}/${SPECIALTY}/` + specialty);
+    }
+
     public getCalendarDoctorBySpecialty(specialty: string) {
         return this.http.get<any>(`${API}/${DOCTOR_CALENDAR}/` + specialty);
     }
+
 }

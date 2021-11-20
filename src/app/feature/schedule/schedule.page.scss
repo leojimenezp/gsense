@@ -1,29 +1,27 @@
-ion-content{
-  
+ion-content {
   --background: #fbfbfb;
-  ion-infinite-scroll{
-    .main{
+  ion-infinite-scroll {
+    .main {
       width: 90%;
       margin: auto;
     }
-    .title-x{
+    .title-x {
       display: flex;
       justify-content: space-between;
       color: #000;
       margin-top: 1em;
-
     }
-    .title-x .text-x{
+    .title-x .text-x {
       vertical-align: middle;
       color: #000;
       font-weight: bold;
     }
-    .title-x .img-x{
+    .title-x .img-x {
       vertical-align: middle;
       margin-top: 0.8em;
       margin-right: 1.5em;
     }
-    .text{
+    .text {
       width: 96%;
       margin: auto;
       color: #000;
@@ -32,7 +30,7 @@ ion-content{
     }
 
     // SELECCIÓN DE SESIONES
-    .card{
+    .card {
       margin-top: 1em;
       margin-bottom: 1em;
 
@@ -43,32 +41,30 @@ ion-content{
       border: 2px solid #aaaaaa;
       padding: 1.2em;
     }
-    .card__title{
+    .card__title {
       text-align: center;
       color: #000;
       font-size: 1.2em;
     }
-    .left-session{
+    .left-session {
       width: 90%;
       margin: auto;
       display: flex;
       flex-flow: column wrap;
-     
     }
-    .left-session-item{
+    .left-session-item {
       color: #000;
       font-weight: bold;
       font-size: 0.8em;
-
     }
-    .line{
+    .line {
       width: 40%;
       height: 2px;
       background: rgb(199, 199, 199);
       margin-top: -0.5em;
       margin-bottom: -0.5em;
     }
-    .select-session{
+    .select-session {
       width: 95%;
       margin: auto;
       display: flex;
@@ -79,7 +75,7 @@ ion-content{
       border: 2px solid #aaaaaa;
       margin-top: 1em;
     }
-     .active{
+    .active {
       width: 95%;
       margin: auto;
       display: flex;
@@ -89,97 +85,92 @@ ion-content{
       border-radius: 1em;
       padding: 1em;
       border: 2px solid rgb(47, 47, 47);
-
     }
-    .p-session{
+    .p-session {
       color: #000;
       font-weight: bold;
       font-size: 1em;
       letter-spacing: 0.01rem;
     }
-    .active .p-session{
+    .active .p-session {
       color: #fff;
       font-weight: bold;
       font-size: 1em;
     }
-    .active .p2-session{
+    .active .p2-session {
       color: rgb(207, 207, 207);
-      font-size: .7rem;
+      font-size: 0.7rem;
       letter-spacing: 0.7px;
       margin-top: 3px;
       text-align: center;
       letter-spacing: 0.1em;
-
-
     }
-    .p2-session{
+    .p2-session {
       margin-top: 3px;
       color: #000;
-      font-size: .7rem;
+      font-size: 0.7rem;
       letter-spacing: 1px;
       text-align: center;
     }
-    
+
     // CALENDARIO
-    .date{
+    .date {
       width: 98%;
       margin: auto;
       display: flex;
       justify-content: space-between;
-      margin-bottom: -.9rem;
+      margin-bottom: -0.9rem;
     }
-    .mes-año{
+    .mes-año {
       color: #000;
       font-weight: bold;
-      vertical-align: middle
+      vertical-align: middle;
     }
-    .arrow-img{
+    .arrow-img {
       margin-top: 0.8em;
       margin-left: 0.8rem;
     }
-    .calendario{
+    .calendario {
       text-align: center;
       width: 100%;
       margin: auto;
     }
-    .ol{
-    
+    .ol {
       list-style: none;
       display: grid;
       grid-template-columns: repeat(7, 1fr);
       padding: 0px;
-      
     }
-    .ol li{
+    .ol li {
       width: 2.5em;
       color: #000;
       text-align: center;
       font-size: 0.7rem;
-      margin: 0.9rem .1rem;
+      margin: 0.9rem 0.1rem;
     }
-    .ol li:hover{
+    .ol li:hover {
       background: rgb(47, 47, 47);
       color: #fff;
       border-radius: 20px;
       cursor: pointer;
-    } 
-    .first{
+    }
+    .first {
       grid-column-start: 1;
     }
-    .dia{
+    .dia {
       background-color: #fff;
       font-weight: bold;
       text-align: center;
       font-size: 0.5rem;
     }
-    .btn-date{
+    .btn-date {
       width: 100%;
       margin: auto;
       display: flex;
       justify-content: center;
       margin-top: 1em;
     }
-    .button{
+    .button {
       width: 100%;
       text-align: center;
       padding: 1em;
@@ -191,55 +182,109 @@ ion-content{
       letter-spacing: 0.04rem;
     }
 
-  //  SELECCIONAR LA HORA
-  .buttons{
-    width: 100%;
-    margin: auto;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
+    //  SELECCIONAR LA HORA
+    .buttons {
+      width: 100%;
+      margin: auto;
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+    }
+
+    .button-time {
+      margin-top: 1em;
+
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+      background: #fff;
+      color: #000;
+      border-radius: 0.7em;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 0.04rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      border: 2px solid #aaaaaa;
+    }
+    .active2 {
+      margin-top: 1em;
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+      background: rgb(47, 47, 47);
+      color: #fff;
+      border-radius: 0.7em;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 0.04rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .button-red {
+      margin-top: 1em;
+      width: 100%;
+      text-align: center;
+      padding: 1em;
+      background: rgb(224, 27, 27);
+      color: #fff;
+      border-radius: 0.7em;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 0.04rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
   }
 
-  .button-time{
-    margin-top: 1em;
-  
+  #main_form {
     width: 100%;
-    text-align: center;
-    padding: 1em;
+    margin-top: 35px;
+  }
+  .main__input {
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  .main_select {
+    width: 100%;
+    padding: 12px 0;
     background: #fff;
-    color: #000;
-    border-radius: 0.7em;
-    font-weight: bold;
-    font-size: 1em;
-    letter-spacing: 0.04rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border: 2px solid #aaaaaa;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
   }
-  .active2{
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    background: rgb(47, 47, 47);
-    color: #fff;
-    border-radius: 0.7em;
-    font-weight: bold;
-    font-size: 1em;
-    letter-spacing: 0.04rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  .main_select select {
+    width: 90%;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    padding-left: 12px;
+    background: #ffffff;
+    color: #757575;
+    font-size: 13px;
   }
-  .button-red{
-    margin-top: 1em;
-    width: 100%;
-    text-align: center;
-    padding: 1em;
-    background: rgb(224, 27, 27);
-    color: #fff;
-    border-radius: 0.7em;
-    font-weight: bold;
-    font-size: 1em;
-    letter-spacing: 0.04rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  .buttons {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
   }
+
+  .btn {
+    text-transform: uppercase;
+    margin-top: 20px;
+    width: 90%;
+    padding: 18px 20px;
+    background: #000000;
+    border-radius: 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
   }
 }
